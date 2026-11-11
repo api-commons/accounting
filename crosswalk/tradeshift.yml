@@ -1,0 +1,15 @@
+provider: tradeshift
+apis_io: https://apis.io/providers/tradeshift/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  tax_rate:
+    path_segment:
+    - taxes
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/tradeshift-external-api-openapi.yml#GET /rest/external/account/taxes
+    - openapi/_original/tradeshift-external-api-openapi.yml#PUT /rest/external/account/taxes
+    - openapi/_original/tradeshift-openapi.json#GET /rest/external/account/taxes
+    - openapi/_original/tradeshift-openapi.json#PUT /rest/external/account/taxes

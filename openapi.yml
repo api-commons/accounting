@@ -1,0 +1,595 @@
+openapi: 3.1.0
+info:
+  title: Accounting (API Commons)
+  version: 0.1.0-draft.20261110
+  description: 'The common Accounting interface, distilled from the harvested OpenAPI of 139 providers in the APIs.io
+    catalog. Not a product: no one serves this API. It is the shape the market already shares, measured, so that
+    providers, agents and integrators can map to one vocabulary. See profile.yml.'
+  license:
+    name: CC BY-NC-SA 4.0
+    url: https://creativecommons.org/licenses/by-nc-sa/4.0/
+paths:
+  /ledger-accounts:
+    get:
+      operationId: listLedgerAccounts
+      summary: List ledger accounts
+      tags:
+      - Ledger Accounts
+      x-commons-tier: core
+      x-commons-share: 1.0
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id001
+                  $ref: '#/components/schemas/LedgerAccount'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createLedgerAccount
+      summary: Create a ledger account
+      tags:
+      - Ledger Accounts
+      x-commons-tier: core
+      x-commons-share: 0.571
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+  /ledger-accounts/{ledger_account_id}:
+    parameters:
+    - $ref: '#/components/parameters/ledger_account_id'
+    get:
+      operationId: getLedgerAccount
+      summary: Get a ledger account
+      tags:
+      - Ledger Accounts
+      x-commons-tier: core
+      x-commons-share: 0.643
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+    patch:
+      operationId: updateLedgerAccount
+      summary: Update a ledger account
+      tags:
+      - Ledger Accounts
+      x-commons-tier: extended
+      x-commons-share: 0.286
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id001
+    delete:
+      operationId: deleteLedgerAccount
+      summary: Delete a ledger account
+      tags:
+      - Ledger Accounts
+      x-commons-tier: extended
+      x-commons-share: 0.214
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id001
+  /journal-entries:
+    get:
+      operationId: listJournalEntries
+      summary: List journal entries
+      tags:
+      - Journal Entries
+      x-commons-tier: core
+      x-commons-share: 0.857
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id002
+                  $ref: '#/components/schemas/JournalEntry'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createJournalEntry
+      summary: Create a journal entry
+      tags:
+      - Journal Entries
+      x-commons-tier: core
+      x-commons-share: 0.81
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /journal-entries/{journal_entry_id}:
+    parameters:
+    - $ref: '#/components/parameters/journal_entry_id'
+    get:
+      operationId: getJournalEntry
+      summary: Get a journal entry
+      tags:
+      - Journal Entries
+      x-commons-tier: core
+      x-commons-share: 0.571
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+    patch:
+      operationId: updateJournalEntry
+      summary: Update a journal entry
+      tags:
+      - Journal Entries
+      x-commons-tier: extended
+      x-commons-share: 0.286
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id002
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id002
+  /vendors:
+    get:
+      operationId: listVendors
+      summary: List vendors
+      tags:
+      - Vendors
+      x-commons-tier: core
+      x-commons-share: 0.907
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id003
+                  $ref: '#/components/schemas/Vendor'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createVendor
+      summary: Create a vendor
+      tags:
+      - Vendors
+      x-commons-tier: core
+      x-commons-share: 0.721
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+  /vendors/{vendor_id}:
+    parameters:
+    - $ref: '#/components/parameters/vendor_id'
+    get:
+      operationId: getVendor
+      summary: Get a vendor
+      tags:
+      - Vendors
+      x-commons-tier: core
+      x-commons-share: 0.721
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+    patch:
+      operationId: updateVendor
+      summary: Update a vendor
+      tags:
+      - Vendors
+      x-commons-tier: core
+      x-commons-share: 0.581
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id003
+    delete:
+      operationId: deleteVendor
+      summary: Delete a vendor
+      tags:
+      - Vendors
+      x-commons-tier: extended
+      x-commons-share: 0.256
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id003
+  /bills:
+    get:
+      operationId: listBills
+      summary: List bills
+      tags:
+      - Bills
+      x-commons-tier: core
+      x-commons-share: 0.842
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id004
+                  $ref: '#/components/schemas/Bill'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createBill
+      summary: Create a bill
+      tags:
+      - Bills
+      x-commons-tier: core
+      x-commons-share: 0.737
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id004
+  /bills/{bill_id}:
+    parameters:
+    - $ref: '#/components/parameters/bill_id'
+    get:
+      operationId: getBill
+      summary: Get a bill
+      tags:
+      - Bills
+      x-commons-tier: core
+      x-commons-share: 0.789
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+    patch:
+      operationId: updateBill
+      summary: Update a bill
+      tags:
+      - Bills
+      x-commons-tier: core
+      x-commons-share: 0.579
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id004
+    delete:
+      operationId: deleteBill
+      summary: Delete a bill
+      tags:
+      - Bills
+      x-commons-tier: extended
+      x-commons-share: 0.368
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id004
+  /expenses:
+    get:
+      operationId: listExpenses
+      summary: List expenses
+      tags:
+      - Expenses
+      x-commons-tier: core
+      x-commons-share: 0.929
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id005
+                  $ref: '#/components/schemas/Expense'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createExpense
+      summary: Create an expense
+      tags:
+      - Expenses
+      x-commons-tier: core
+      x-commons-share: 0.571
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id005
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id005
+  /expenses/{expense_id}:
+    parameters:
+    - $ref: '#/components/parameters/expense_id'
+    get:
+      operationId: getExpense
+      summary: Get an expense
+      tags:
+      - Expenses
+      x-commons-tier: core
+      x-commons-share: 0.714
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id005
+    delete:
+      operationId: deleteExpense
+      summary: Delete an expense
+      tags:
+      - Expenses
+      x-commons-tier: extended
+      x-commons-share: 0.429
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id005
+    patch:
+      operationId: updateExpense
+      summary: Update an expense
+      tags:
+      - Expenses
+      x-commons-tier: extended
+      x-commons-share: 0.357
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id005
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id005
+  /tax-rates:
+    get:
+      operationId: listTaxRates
+      summary: List tax rates
+      tags:
+      - Tax Rates
+      x-commons-tier: core
+      x-commons-share: 0.857
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items: &id006
+                  $ref: '#/components/schemas/TaxRate'
+      parameters:
+      - name: limit
+        in: query
+        schema:
+          type: integer
+      - name: cursor
+        in: query
+        schema:
+          type: string
+    post:
+      operationId: createTaxRate
+      summary: Create a tax rate
+      tags:
+      - Tax Rates
+      x-commons-tier: core
+      x-commons-share: 0.571
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id006
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id006
+  /tax-rates/{tax_rate_id}:
+    parameters:
+    - $ref: '#/components/parameters/tax_rate_id'
+    get:
+      operationId: getTaxRate
+      summary: Get a tax rate
+      tags:
+      - Tax Rates
+      x-commons-tier: core
+      x-commons-share: 0.667
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id006
+    patch:
+      operationId: updateTaxRate
+      summary: Update a tax rate
+      tags:
+      - Tax Rates
+      x-commons-tier: extended
+      x-commons-share: 0.333
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id006
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: *id006
+    delete:
+      operationId: deleteTaxRate
+      summary: Delete a tax rate
+      tags:
+      - Tax Rates
+      x-commons-tier: extended
+      x-commons-share: 0.238
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema: *id006
+components:
+  schemas:
+    LedgerAccount:
+      $ref: ./schema/ledger_account.json
+    JournalEntry:
+      $ref: ./schema/journal_entry.json
+    Vendor:
+      $ref: ./schema/vendor.json
+    Bill:
+      $ref: ./schema/bill.json
+    Expense:
+      $ref: ./schema/expense.json
+    TaxRate:
+      $ref: ./schema/tax_rate.json
+  parameters:
+    ledger_account_id:
+      name: ledger_account_id
+      in: path
+      required: true
+      schema:
+        type: string
+    journal_entry_id:
+      name: journal_entry_id
+      in: path
+      required: true
+      schema:
+        type: string
+    vendor_id:
+      name: vendor_id
+      in: path
+      required: true
+      schema:
+        type: string
+    bill_id:
+      name: bill_id
+      in: path
+      required: true
+      schema:
+        type: string
+    expense_id:
+      name: expense_id
+      in: path
+      required: true
+      schema:
+        type: string
+    tax_rate_id:
+      name: tax_rate_id
+      in: path
+      required: true
+      schema:
+        type: string

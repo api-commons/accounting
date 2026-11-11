@@ -1,0 +1,79 @@
+provider: eci-solutions
+apis_io: https://apis.io/providers/eci-solutions/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  vendor:
+    path_segment:
+    - vendors
+    - vendor
+    - suppliers
+    properties:
+      id:
+      - vendorId
+      - id
+      name: name
+      status: active
+      email:
+      - emailAddress
+      - email
+      address: address
+      tax_id: taxIdentifier
+      currency: currencyCode
+      phone: phone
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/eci-solutions-apar-commerce-openapi.json#DELETE /api/v1/vendors/{id}
+    - openapi/_original/eci-solutions-apar-commerce-openapi.json#GET /api/v1/vendors
+    - openapi/_original/eci-solutions-apar-commerce-openapi.json#GET /api/v1/vendors/{id}
+    - openapi/_original/eci-solutions-apar-commerce-openapi.json#PATCH /api/v1/vendors/{id}
+    - openapi/_original/eci-solutions-apar-commerce-openapi.json#POST /api/v1/vendors
+  bill:
+    path_segment:
+    - bill
+    - bills
+    properties:
+      due_date: dueDate
+      id: id
+      description: description
+      lines: lines
+      vendor_id: supplier
+      currency:
+      - currencyCode
+      - baseCurrency
+      number: docNumber
+      bill_date: billDate
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/eci-solutions-financial-v1-openapi.json#DELETE /api/Contact/Bill/{id}
+    - openapi/_original/eci-solutions-financial-v2-openapi.json#POST /api/v2/bills
+  expense:
+    path_segment:
+    - expenses
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/eci-solutions-m1-openapi.json#DELETE /api/ERP/Expenses/{key}
+    - openapi/_original/eci-solutions-m1-openapi.json#GET /api/ERP/Expenses
+    - openapi/_original/eci-solutions-m1-openapi.json#GET /api/ERP/Expenses/{key}
+    - openapi/_original/eci-solutions-m1-openapi.json#PUT /api/ERP/Expenses
+  tax_rate:
+    path_segment:
+    - tax-codes
+    - taxcodes
+    properties:
+      code:
+      - code
+      - taxCode
+      name: name
+      description: description
+      status:
+      - isActive
+      - active
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/eci-solutions-erp-v2-1-openapi.json#GET /api/v2.1/tax-codes
+    - openapi/_original/eci-solutions-erp-v2-1-openapi.json#GET /api/v2.1/view/tax-codes
+    - openapi/_original/eci-solutions-erp-v2-openapi.json#GET /api/v2/view/tax-codes
+    - openapi/_original/eci-solutions-financial-v2-openapi.json#GET /api/v2/tax-codes
+    - openapi/_original/eci-solutions-jobboss2-openapi.json#GET /api/v1/tax-codes

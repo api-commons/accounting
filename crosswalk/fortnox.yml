@@ -1,0 +1,20 @@
+provider: fortnox
+apis_io: https://apis.io/providers/fortnox/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  vendor:
+    path_segment:
+    - suppliers
+    properties:
+      name: Name
+      email: Email
+      tax_id: VATNumber
+      currency: Currency
+      city: City
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/fortnox-openapi.yml#GET /suppliers
+    - openapi/_original/fortnox-openapi.yml#GET /suppliers/{SupplierNumber}
+    - openapi/_original/fortnox-openapi.yml#POST /suppliers
+    - openapi/_original/fortnox-openapi.yml#PUT /suppliers/{SupplierNumber}

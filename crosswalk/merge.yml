@@ -1,0 +1,106 @@
+provider: merge
+apis_io: https://apis.io/providers/merge/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  ledger_account:
+    path_segment:
+    - accounts
+    properties:
+      type:
+      - classification
+      - type
+      - account_type
+      name: name
+      number: account_number
+      id:
+      - id
+      - remote_id
+      currency: currency
+      description: description
+      status: status
+      balance: current_balance
+      updated_at: modified_at
+      created_at:
+      - created_at
+      - remote_created_at
+      parent_id: parent_account
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/merge-accounting-api-openapi.yaml#GET /accounting/v1/accounts
+    - openapi/_original/merge-accounting-api-openapi.yaml#GET /accounting/v1/accounts/{id}
+    - openapi/_original/merge-accounting-api-openapi.yaml#POST /accounting/v1/accounts
+    - openapi/_original/merge-crm-api-openapi.yaml#GET /crm/v1/accounts
+    - openapi/_original/merge-crm-api-openapi.yaml#GET /crm/v1/accounts/{id}
+  journal_entry:
+    path_segment:
+    - journal-entries
+    properties:
+      description: memo
+      date: transaction_date
+      id:
+      - id
+      - remote_id
+      lines: lines
+      currency: currency
+      created_at:
+      - created_at
+      - remote_created_at
+      exchange_rate: exchange_rate
+      number: journal_number
+      updated_at: modified_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/merge-accounting-api-openapi.yaml#GET /accounting/v1/journal-entries
+    - openapi/_original/merge-accounting-api-openapi.yaml#GET /accounting/v1/journal-entries/{id}
+    - openapi/_original/merge-accounting-api-openapi.yaml#POST /accounting/v1/journal-entries
+  vendor:
+    path_segment:
+    - vendors
+    properties:
+      name: name
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/merge-gateway-api-openapi.yaml#GET /vendors
+    - openapi/_original/merge-gateway-api-openapi.yaml#GET /vendors/{vendor_id}
+  expense:
+    path_segment:
+    - expenses
+    - expense-reports
+    properties:
+      id:
+      - id
+      - remote_id
+      date: transaction_date
+      description:
+      - description
+      - memo
+      amount: total_amount
+      created_at:
+      - created_at
+      - remote_created_at
+      currency: currency
+      exchange_rate: exchange_rate
+      updated_at: modified_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/merge-accounting-api-openapi.yaml#GET /accounting/v1/expense-reports
+    - openapi/_original/merge-accounting-api-openapi.yaml#GET /accounting/v1/expense-reports/{id}
+    - openapi/_original/merge-accounting-api-openapi.yaml#GET /accounting/v1/expenses
+    - openapi/_original/merge-accounting-api-openapi.yaml#GET /accounting/v1/expenses/{id}
+    - openapi/_original/merge-accounting-api-openapi.yaml#POST /accounting/v1/expense-reports
+  tax_rate:
+    path_segment:
+    - tax-rates
+    properties:
+      code: code
+      id:
+      - id
+      - remote_id
+      name: name
+      description: description
+      status: status
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/merge-accounting-api-openapi.yaml#GET /accounting/v1/tax-rates
+    - openapi/_original/merge-accounting-api-openapi.yaml#GET /accounting/v1/tax-rates/{id}

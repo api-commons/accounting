@@ -1,0 +1,13 @@
+provider: restaurant365
+apis_io: https://apis.io/providers/restaurant365/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  journal_entry:
+    path_segment:
+    - journalentries
+    properties:
+      date: Date
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/restaurant365-r365-api-openapi.yml#POST /APIv1/JournalEntries

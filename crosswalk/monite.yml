@@ -1,0 +1,31 @@
+provider: monite
+apis_io: https://apis.io/providers/monite/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  bill:
+    path_segment:
+    - payables
+    properties:
+      due_date: due_date
+      id: id
+      description:
+      - memo
+      - description
+      lines: lines
+      status: status
+      vendor_id: vendor_ref
+      total: total_amount
+      currency: currency
+      number: invoice_number
+      created_at: created_at
+      updated_at: updated_at
+      amount_due: amount_due
+      tax_amount: tax_amount
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/monite-openapi-2023-09-01.json#DELETE /payables/{payable_id}
+    - openapi/_original/monite-openapi-2023-09-01.json#GET /accounting/payables
+    - openapi/_original/monite-openapi-2023-09-01.json#GET /accounting/payables/{payable_id}
+    - openapi/_original/monite-openapi-2023-09-01.json#GET /analytics/payables
+    - openapi/_original/monite-openapi-2023-09-01.json#GET /payables

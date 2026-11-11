@@ -1,0 +1,46 @@
+provider: pennylane
+apis_io: https://apis.io/providers/pennylane/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  ledger_account:
+    path_segment:
+    - ledger_accounts
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/pennylane-openapi.yml#GET /ledger_accounts
+    - openapi/_original/pennylane-openapi.yml#GET /ledger_accounts/{id}
+    - openapi/_original/pennylane-openapi.yml#POST /ledger_accounts
+    - openapi/_original/pennylane-openapi.yml#PUT /ledger_accounts/{id}
+  journal_entry:
+    path_segment:
+    - ledger_entries
+    - journals
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/pennylane-openapi.yml#GET /journals
+    - openapi/_original/pennylane-openapi.yml#GET /journals/{id}
+    - openapi/_original/pennylane-openapi.yml#GET /ledger_entries
+    - openapi/_original/pennylane-openapi.yml#GET /ledger_entries/{id}
+    - openapi/_original/pennylane-openapi.yml#POST /journals
+  vendor:
+    path_segment:
+    - suppliers
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/pennylane-openapi.yml#GET /suppliers
+    - openapi/_original/pennylane-openapi.yml#GET /suppliers/{id}
+    - openapi/_original/pennylane-openapi.yml#POST /suppliers
+    - openapi/_original/pennylane-openapi.yml#PUT /suppliers/{id}
+  bill:
+    path_segment:
+    - supplier_invoices
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/pennylane-openapi.yml#GET /supplier_invoices
+    - openapi/_original/pennylane-openapi.yml#GET /supplier_invoices/{id}
+    - openapi/_original/pennylane-openapi.yml#PUT /supplier_invoices/{id}

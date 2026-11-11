@@ -1,0 +1,36 @@
+provider: pleo
+apis_io: https://apis.io/providers/pleo/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  vendor:
+    path_segment:
+    - vendors
+    properties:
+      id: id
+      name: name
+      status: state
+      tax_id: taxRegistrationNumber
+      updated_at: updatedAt
+      created_at: createdAt
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/pleo-vendors-openapi.yml#GET /v1/vendors/{id}
+    - openapi/_original/pleo-vendors-openapi.yml#POST /v1/vendors
+    - openapi/_original/pleo-vendors-openapi.yml#PUT /v1/vendors/{id}
+  tax_rate:
+    path_segment:
+    - tax-codes
+    properties:
+      code: code
+      rate: rate
+      name: name
+      status: archived
+      type: type
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/pleo-gjoll-openapi.yml#DELETE /v0/tax-codes/{taxCodeId}
+    - openapi/_original/pleo-gjoll-openapi.yml#GET /v0/tax-codes/{taxCodeId}
+    - openapi/_original/pleo-gjoll-openapi.yml#POST /v0/tax-codes
+    - openapi/_original/pleo-gjoll-openapi.yml#PUT /v0/tax-codes/{taxCodeId}
+    - openapi/_original/pleo-tax-code-openapi.yml#DELETE /v0/tax-codes/{taxCodeId}

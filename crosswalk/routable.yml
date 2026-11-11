@@ -1,0 +1,21 @@
+provider: routable
+apis_io: https://apis.io/providers/routable/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  bill:
+    path_segment:
+    - payables
+    properties:
+      due_date: due_date
+      id: id
+      status: status
+      total: amount
+      currency: currency
+      created_at: date_created
+    core_coverage: 0.625
+    evidence:
+    - openapi/_original/routable-openapi.yml#GET /payables
+    - openapi/_original/routable-openapi.yml#GET /payables/{id}
+    - openapi/_original/routable-openapi.yml#PATCH /payables/{id}
+    - openapi/_original/routable-openapi.yml#POST /payables

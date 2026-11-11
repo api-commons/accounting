@@ -1,0 +1,163 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/accounting/main/schema/ledger_account.json",
+  "title": "Ledger Account",
+  "description": "The common ledger_account in Accounting, distilled from 12 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 1.0,
+      "x-commons-providers": 12,
+      "x-commons-spellings": [
+        "accountType",
+        "type",
+        "account_type",
+        "category",
+        "class",
+        "classification",
+        "Type",
+        "Class"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.917,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "name",
+        "displayName",
+        "fullyQualifiedName",
+        "Name"
+      ]
+    },
+    "number": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.917,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "number",
+        "code",
+        "nominalCode",
+        "account_number",
+        "accountNumber",
+        "Code"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.75,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "id",
+        "remote_id"
+      ]
+    },
+    "currency": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.667,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "currency",
+        "currencyCode",
+        "CurrencyCode"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.667,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "description",
+        "Description"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.667,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "status",
+        "active",
+        "Status"
+      ]
+    },
+    "balance": {
+      "type": "number",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.583,
+      "x-commons-providers": 7,
+      "x-commons-spellings": [
+        "balance",
+        "current_balance",
+        "currentBalance",
+        "accountBalance"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.333,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "updatedDate",
+        "modified_at",
+        "updated_at",
+        "UpdatedDateUTC"
+      ],
+      "format": "date-time"
+    },
+    "account_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.25,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "account_id",
+        "accountId",
+        "AccountID"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.25,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "created_at",
+        "createdDate",
+        "remote_created_at"
+      ],
+      "format": "date-time"
+    },
+    "parent_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.25,
+      "x-commons-providers": 3,
+      "x-commons-spellings": [
+        "parent",
+        "parentAccountId",
+        "parent_account"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "accounting",
+    "concept": "ledger_account",
+    "providers": 12,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

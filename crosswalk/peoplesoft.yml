@@ -1,0 +1,12 @@
+provider: peoplesoft
+apis_io: https://apis.io/providers/peoplesoft/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  journal_entry:
+    path_segment:
+    - journals
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/financials.yml#GET /gl/journals

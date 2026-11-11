@@ -1,0 +1,44 @@
+provider: procurify
+apis_io: https://apis.io/providers/procurify/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  vendor:
+    path_segment:
+    - vendors
+    properties:
+      id: id
+      name: name
+      status: active
+      email: email
+      currency: currency
+      updated_at: dateModified
+      city: city
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/procurify-procurify-api-openapi.yml#GET /api/v3/vendors/
+    - openapi/_original/procurify-procurify-api-openapi.yml#GET /api/v3/vendors/{id}/
+    - openapi/_original/procurify-procurify-api-openapi.yml#PATCH /api/v3/vendors/{id}/
+    - openapi/_original/procurify-procurify-api-openapi.yml#POST /api/v3/vendors/
+    - openapi/_original/procurify-procurify-api-openapi.yml#PUT /api/v3/vendors/{id}/
+  bill:
+    path_segment:
+    - bills
+    properties:
+      due_date: due_date
+      id:
+      - id
+      - uuid
+      description: note
+      lines: items
+      status:
+      - status
+      - active
+      vendor_id: vendor
+      currency: currency
+      number: invoice_number
+      tax_amount: tax_amount
+    core_coverage: 0.875
+    evidence:
+    - openapi/_original/procurify-procurify-api-openapi.yml#GET /api/v2/ap/bills/{id}/
+    - openapi/_original/procurify-procurify-api-openapi.yml#GET /api/v3/ap/bills/

@@ -1,0 +1,91 @@
+provider: codat
+apis_io: https://apis.io/providers/codat/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  ledger_account:
+    path_segment:
+    - accounts
+    - chartofaccounts
+    properties:
+      type:
+      - type
+      - accountType
+      name:
+      - name
+      - fullyQualifiedName
+      - displayName
+      number: nominalCode
+      id: id
+      currency: currency
+      description: description
+      status: status
+      balance: currentBalance
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/codat-lending-openapi.json#GET /companies/{companyId}/connections/{connectionId}/options/chartOfAccounts
+    - openapi/_original/codat-lending-openapi.json#GET /companies/{companyId}/data/accounts
+    - openapi/_original/codat-lending-openapi.json#GET /companies/{companyId}/data/accounts/{accountId}
+    - openapi/_original/codat-lending-openapi.json#GET /companies/{companyId}/reports/categorizedBankStatement/{reportId}/accounts
+    - openapi/_original/codat-lending-openapi.json#GET /companies/{companyId}/reports/enhancedBalanceSheet/accounts
+  journal_entry:
+    path_segment:
+    - journalentries
+    - journals
+    properties:
+      description: description
+      id: id
+      lines: journalLines
+      created_at: createdOn
+      status: status
+      name: name
+      type: type
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/codat-lending-openapi.json#GET /companies/{companyId}/data/journalEntries
+    - openapi/_original/codat-lending-openapi.json#GET /companies/{companyId}/data/journalEntries/{journalEntryId}
+    - openapi/_original/codat-lending-openapi.json#GET /companies/{companyId}/data/journals
+    - openapi/_original/codat-lending-openapi.json#GET /companies/{companyId}/data/journals/{journalId}
+    - openapi/_original/codat-io-openapi.yml#GET /companies/{companyId}/connections/{connectionId}/data/journalEntries
+  vendor:
+    path_segment:
+    - suppliers
+    properties:
+      id: id
+      name: displayName
+      status: status
+      email: emailAddress
+      address: addresses
+      tax_id: taxNumber
+      description: description
+      phone: phone
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/codat-lending-openapi.json#GET /companies/{companyId}/connections/{connectionId}/options/suppliers
+    - openapi/_original/codat-lending-openapi.json#GET /companies/{companyId}/data/suppliers
+    - openapi/_original/codat-lending-openapi.json#GET /companies/{companyId}/data/suppliers/{supplierId}
+    - openapi/_original/codat-lending-openapi.json#POST /companies/{companyId}/connections/{connectionId}/push/suppliers
+    - openapi/_original/codat-io-openapi.yml#GET /companies/{companyId}/connections/{connectionId}/data/suppliers
+  bill:
+    path_segment:
+    - bills
+    properties:
+      due_date: dueDate
+      id: id
+      description:
+      - reference
+      - note
+      lines: lineItems
+      status: status
+      total: totalAmount
+      currency: currency
+      date: issueDate
+      amount_due: amountDue
+      tax_amount: taxAmount
+    core_coverage: 0.875
+    evidence:
+    - openapi/_original/codat-lending-openapi.json#GET /companies/{companyId}/data/bills
+    - openapi/_original/codat-lending-openapi.json#GET /companies/{companyId}/data/bills/{billId}
+    - openapi/_original/codat-io-openapi.yml#GET /companies/{companyId}/connections/{connectionId}/data/bills
+    - openapi/_original/codat-io-openapi.yml#GET /companies/{companyId}/connections/{connectionId}/payables/bills
+    - openapi/_original/codat-io-openapi.yml#POST /companies/{companyId}/connections/{connectionId}/payables/bills

@@ -1,0 +1,21 @@
+provider: campfire-hq
+apis_io: https://apis.io/providers/campfire-hq/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  vendor:
+    path_segment:
+    - vendor
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/campfire-hq-openapi.yml#GET /coa/api/vendor
+    - openapi/_original/campfire-hq-openapi.yml#POST /coa/api/vendor
+  bill:
+    path_segment:
+    - bill
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/campfire-hq-openapi.yml#GET /coa/api/v1/bill/
+    - openapi/_original/campfire-hq-openapi.yml#POST /coa/api/v1/bill/

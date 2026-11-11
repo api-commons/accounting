@@ -1,0 +1,31 @@
+provider: basware
+apis_io: https://apis.io/providers/basware/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  vendor:
+    path_segment:
+    - vendors
+    properties:
+      name: name
+      address: addresses
+      description: description
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/basware-p2p-openapi.json#DELETE /v1/vendors
+    - openapi/_original/basware-p2p-openapi.json#GET /v1/vendors
+    - openapi/_original/basware-p2p-openapi.json#GET /v1/vendors/{externalCode}
+    - openapi/_original/basware-p2p-openapi.json#PATCH /v1/vendors/{externalCode}
+    - openapi/_original/basware-p2p-openapi.json#POST /v1/vendors
+  tax_rate:
+    path_segment:
+    - taxcodes
+    properties:
+      code: taxCode
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/basware-p2p-openapi.json#DELETE /v1/taxCodes
+    - openapi/_original/basware-p2p-openapi.json#GET /v1/taxCodes
+    - openapi/_original/basware-p2p-openapi.json#GET /v1/taxCodes/{externalCode}
+    - openapi/_original/basware-p2p-openapi.json#PATCH /v1/taxCodes/{externalCode}
+    - openapi/_original/basware-p2p-openapi.json#POST /v1/taxCodes

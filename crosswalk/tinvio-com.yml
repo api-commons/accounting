@@ -1,0 +1,53 @@
+provider: tinvio-com
+apis_io: https://apis.io/providers/tinvio-com/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  ledger_account:
+    path_segment:
+    - chart-of-accounts
+    properties:
+      type: accountType
+      name: name
+      number: code
+      currency: currencyCode
+      description: description
+    core_coverage: 0.625
+    evidence:
+    - openapi/_original/tinvio-com-openapi-original.yaml#DELETE /api/v1/chart-of-accounts/{resourceId}
+    - openapi/_original/tinvio-com-openapi-original.yaml#GET /api/v1/chart-of-accounts
+    - openapi/_original/tinvio-com-openapi-original.yaml#GET /api/v1/chart-of-accounts/{resourceId}
+    - openapi/_original/tinvio-com-openapi-original.yaml#POST /api/v1/chart-of-accounts
+    - openapi/_original/tinvio-com-openapi-original.yaml#PUT /api/v1/chart-of-accounts/{resourceId}
+  journal_entry:
+    path_segment:
+    - journals
+    properties:
+      description: reference
+      currency: currency
+      status: status
+      updated_at: updated
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/tinvio-com-openapi-original.yaml#DELETE /api/v1/journals/{resourceId}
+    - openapi/_original/tinvio-com-openapi-original.yaml#DELETE /api/v1/scheduled/journals/{resourceId}
+    - openapi/_original/tinvio-com-openapi-original.yaml#GET /api/v1/journals
+    - openapi/_original/tinvio-com-openapi-original.yaml#GET /api/v1/journals/{resourceId}
+    - openapi/_original/tinvio-com-openapi-original.yaml#GET /api/v1/scheduled/journals
+  bill:
+    path_segment:
+    - bills
+    properties:
+      due_date: dueDate
+      description: reference
+      lines: lineItems
+      status: status
+      currency: currency
+      updated_at: updated
+    core_coverage: 0.625
+    evidence:
+    - openapi/_original/tinvio-com-openapi-original.yaml#DELETE /api/v1/bills/{resourceId}
+    - openapi/_original/tinvio-com-openapi-original.yaml#DELETE /api/v1/scheduled/bills/{resourceId}
+    - openapi/_original/tinvio-com-openapi-original.yaml#GET /api/v1/bills
+    - openapi/_original/tinvio-com-openapi-original.yaml#GET /api/v1/bills/{resourceId}
+    - openapi/_original/tinvio-com-openapi-original.yaml#GET /api/v1/scheduled/bills

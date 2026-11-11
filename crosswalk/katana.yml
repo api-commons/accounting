@@ -1,0 +1,30 @@
+provider: katana
+apis_io: https://apis.io/providers/katana/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  vendor:
+    path_segment:
+    - suppliers
+    properties:
+      name: name
+      email: email
+      address: addresses
+      currency: currency
+      phone: phone
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/katana-openapi-original.json#DELETE /suppliers/{id}
+    - openapi/_original/katana-openapi-original.json#GET /suppliers
+    - openapi/_original/katana-openapi-original.json#PATCH /suppliers/{id}
+    - openapi/_original/katana-openapi-original.json#POST /suppliers
+  tax_rate:
+    path_segment:
+    - tax_rates
+    properties:
+      rate: rate
+      name: name
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/katana-openapi-original.json#GET /tax_rates
+    - openapi/_original/katana-openapi-original.json#POST /tax_rates

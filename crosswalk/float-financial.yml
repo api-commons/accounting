@@ -1,0 +1,46 @@
+provider: float-financial
+apis_io: https://apis.io/providers/float-financial/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  vendor:
+    path_segment:
+    - vendors
+    properties:
+      id: id
+      name: name
+      currency: currency
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/float-financial-openapi.json#GET /v1/vendors
+    - openapi/_original/float-financial-openapi.json#GET /v1/vendors/{vendor_id}
+    - openapi/_original/float-financial-openapi.json#PATCH /v1/vendors/{vendor_id}
+    - openapi/_original/float-financial-openapi.json#POST /v1/vendors
+    - openapi/_original/float-financial-openapi.yml#GET /v1/vendors
+  bill:
+    path_segment:
+    - bills
+    properties:
+      lines: items
+      status: status
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/float-financial-openapi.json#GET /v1/bills
+    - openapi/_original/float-financial-openapi.json#GET /v1/bills/{bill_id}
+    - openapi/_original/float-financial-openapi.json#PATCH /v1/bills
+    - openapi/_original/float-financial-openapi.json#PATCH /v1/bills/{bill_id}
+    - openapi/_original/float-financial-openapi.yml#GET /v1/bills
+  tax_rate:
+    path_segment:
+    - tax-codes
+    properties:
+      id: id
+      rate: effective_rate
+      name: name
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/float-financial-openapi.json#DELETE /v1/tax-codes/{tax_code_id}
+    - openapi/_original/float-financial-openapi.json#GET /v1/tax-codes
+    - openapi/_original/float-financial-openapi.json#GET /v1/tax-codes/{tax_code_id}
+    - openapi/_original/float-financial-openapi.json#PATCH /v1/tax-codes/{tax_code_id}
+    - openapi/_original/float-financial-openapi.json#POST /v1/tax-codes

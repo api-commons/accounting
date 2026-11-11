@@ -1,0 +1,87 @@
+provider: rillet
+apis_io: https://apis.io/providers/rillet/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  ledger_account:
+    path_segment:
+    - accounts
+    properties:
+      type: type
+      name: name
+      number: code
+      id: id
+      status: status
+      updated_at: updated_at
+    core_coverage: 0.625
+    evidence:
+    - openapi/_original/rillet-accounting-api-openapi.json#GET /accounts
+  journal_entry:
+    path_segment:
+    - journal-entries
+    properties:
+      date: date
+      id: id
+      currency: currency
+      exchange_rate: exchange_rate
+      name: name
+      updated_at: updated_at
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/rillet-accounting-api-openapi.json#DELETE /journal-entries/{journal_entry_id}
+    - openapi/_original/rillet-accounting-api-openapi.json#GET /journal-entries
+    - openapi/_original/rillet-accounting-api-openapi.json#GET /journal-entries/{journal_entry_id}
+    - openapi/_original/rillet-accounting-api-openapi.json#GET /reports/journal-entries
+    - openapi/_original/rillet-accounting-api-openapi.json#POST /journal-entries
+  vendor:
+    path_segment:
+    - vendors
+    properties:
+      id: id
+      name: name
+      email: email
+      address: address
+      tax_id: tax_id
+      updated_at: updated_at
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/rillet-accounting-api-openapi.json#DELETE /vendors/{vendor_id}
+    - openapi/_original/rillet-accounting-api-openapi.json#GET /vendors
+    - openapi/_original/rillet-accounting-api-openapi.json#GET /vendors/{vendor_id}
+    - openapi/_original/rillet-accounting-api-openapi.json#POST /vendors
+    - openapi/_original/rillet-accounting-api-openapi.json#PUT /vendors/{vendor_id}
+  bill:
+    path_segment:
+    - bills
+    properties:
+      due_date: due_date
+      id: id
+      description: description
+      lines: items
+      vendor_id: vendor_id
+      total: amount
+      bill_date: bill_date
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/rillet-accounting-api-openapi.json#DELETE /bills/{bill_id}
+    - openapi/_original/rillet-accounting-api-openapi.json#GET /bills
+    - openapi/_original/rillet-accounting-api-openapi.json#GET /bills/{bill_id}
+    - openapi/_original/rillet-accounting-api-openapi.json#POST /bills
+    - openapi/_original/rillet-accounting-api-openapi.json#POST /bills/{bill_id}
+  tax_rate:
+    path_segment:
+    - taxes
+    - tax-rates
+    properties:
+      code: code
+      id: id
+      rate: percentage
+      description:
+      - memo
+      - description
+      status: status
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/rillet-accounting-api-openapi.json#GET /tax-rates
+    - openapi/_original/rillet-accounting-api-openapi.json#POST /credit-memos/{credit_memo_id}/taxes
+    - openapi/_original/rillet-accounting-api-openapi.json#POST /invoices/{invoice_id}/taxes

@@ -1,0 +1,92 @@
+provider: campfire
+apis_io: https://apis.io/providers/campfire/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  ledger_account:
+    path_segment:
+    - account
+    - accounts
+    properties:
+      type:
+      - account_type
+      - type
+      name: name
+      number: number
+      id: id
+      currency: currency
+      description: description
+      status: status
+      balance: current_balance
+      account_id: account_id
+      created_at: created_at
+      parent_id: parent
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/campfire-openapi-original.json#DELETE /ca/api/account/{id}
+    - openapi/_original/campfire-openapi-original.json#DELETE /coa/api/account/{id}
+    - openapi/_original/campfire-openapi-original.json#DELETE /coa/api/budgets/{budget_pk}/accounts/{id}
+    - openapi/_original/campfire-openapi-original.json#GET /ca/api/account
+    - openapi/_original/campfire-openapi-original.json#GET /ca/api/account/{id}
+  journal_entry:
+    path_segment:
+    - journal_entry
+    properties:
+      description: memo
+      date: date
+      id: id
+      currency: currency
+      created_at: created_at
+      exchange_rate: exchange_rate
+      type: type
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/campfire-openapi-original.json#DELETE /coa/api/journal_entry/{id}
+    - openapi/_original/campfire-openapi-original.json#GET /coa/api/journal_entry
+    - openapi/_original/campfire-openapi-original.json#GET /coa/api/journal_entry/{id}
+    - openapi/_original/campfire-openapi-original.json#PATCH /coa/api/journal_entry/{id}
+    - openapi/_original/campfire-openapi-original.json#POST /coa/api/journal_entry
+  vendor:
+    path_segment:
+    - vendor
+    properties:
+      id: id
+      name: name
+      status:
+      - state
+      - status
+      email: email
+      tax_id: vat_number
+      description: notes
+      phone: phone_number
+      city: city
+      created_at: created_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/campfire-openapi-original.json#DELETE /coa/api/vendor/{id}
+    - openapi/_original/campfire-openapi-original.json#GET /coa/api/vendor
+    - openapi/_original/campfire-openapi-original.json#GET /coa/api/vendor/{id}
+    - openapi/_original/campfire-openapi-original.json#PATCH /coa/api/vendor/{id}
+    - openapi/_original/campfire-openapi-original.json#POST /coa/api/vendor
+  bill:
+    path_segment:
+    - bill
+    properties:
+      due_date: due_date
+      id: id
+      lines: lines
+      status: status
+      vendor_id: vendor
+      total: total_amount
+      currency: currency
+      number: bill_number
+      created_at: created_at
+      amount_due: amount_due
+      bill_date: bill_date
+    core_coverage: 0.875
+    evidence:
+    - openapi/_original/campfire-openapi-original.json#DELETE /coa/api/v1/bill/{id}/
+    - openapi/_original/campfire-openapi-original.json#GET /coa/api/v1/bill/
+    - openapi/_original/campfire-openapi-original.json#GET /coa/api/v1/bill/{id}/
+    - openapi/_original/campfire-openapi-original.json#PATCH /coa/api/v1/bill/{id}/
+    - openapi/_original/campfire-openapi-original.json#POST /coa/api/v1/bill/

@@ -1,0 +1,37 @@
+provider: workday-financials
+apis_io: https://apis.io/providers/workday-financials/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  journal_entry:
+    path_segment:
+    - journalentries
+    properties:
+      description: description
+      date: journalDate
+      id: id
+      lines: lines
+      currency: currency
+      created_at: createdOn
+      status: status
+      number: journalNumber
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/workday-financials-financial-accounting-openapi.yml#GET /journalEntries
+    - openapi/_original/workday-financials-financial-accounting-openapi.yml#GET /journalEntries/{id}
+    - openapi/_original/workday-financials-financial-accounting-openapi.yml#POST /journalEntries
+    - openapi/_original/workday-financials-financial-management-openapi.yml#GET /journalEntries
+    - openapi/_original/workday-financials-financial-management-openapi.yml#GET /journalEntries/{id}
+  vendor:
+    path_segment:
+    - suppliers
+    properties:
+      id: id
+      status: active
+      address: address
+      tax_id: taxId
+      currency: currency
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/workday-financials-procurement-openapi.yml#GET /suppliers
+    - openapi/_original/workday-financials-procurement-openapi.yml#GET /suppliers/{id}

@@ -1,0 +1,12 @@
+provider: broadlume
+apis_io: https://apis.io/providers/broadlume/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  vendor:
+    path_segment:
+    - vendors
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/broadlume-bms-openapi.yml#GET /{alias}/vendors

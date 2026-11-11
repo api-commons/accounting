@@ -1,0 +1,1220 @@
+[
+ {
+  "slug": "alasco",
+  "specs": [
+   "openapi/_original/alasco-capex-openapi.json",
+   "openapi/_original/alasco-esg-openapi.json",
+   "openapi/_original/alasco-fincon-openapi.json"
+  ]
+ },
+ {
+  "slug": "amcs-group",
+  "specs": [
+   "openapi/_original/amcs-group-core-openapi-original.json",
+   "openapi/_original/amcs-group-erp-openapi-original.json",
+   "openapi/_original/amcs-group-pay-openapi-original.json",
+   "openapi/_original/amcs-group-scale-openapi-original.json",
+   "openapi/_original/amcs-group-tlv-openapi-original.json",
+   "openapi/_original/amcs-group-visionai-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "apache-ofbiz",
+  "specs": [
+   "openapi/_original/apache-ofbiz-rest-api-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "appzen",
+  "specs": [
+   "openapi/_original/appzen-autonomous-ap-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "aptean",
+  "specs": [
+   "openapi/_original/aptean-integration-platform-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "avalara",
+  "specs": [
+   "openapi/_original/avalara-1099-w9-openapi.yml",
+   "openapi/_original/avalara-activation-service-openapi.yml",
+   "openapi/_original/avalara-avatax-brazil-openapi.yml",
+   "openapi/_original/avalara-avatax-rest-openapi.yml",
+   "openapi/_original/avalara-business-openapi.yml",
+   "openapi/_original/avalara-certcapture-openapi.yml",
+   "openapi/_original/avalara-communications-openapi.yml",
+   "openapi/_original/avalara-e-invoicing-openapi.yml",
+   "openapi/_original/avalara-excise-openapi.yml",
+   "openapi/_original/avalara-hs-code-classification-openapi.yml",
+   "openapi/_original/avalara-item-classification-openapi.yml",
+   "openapi/_original/avalara-mylodgetax-openapi.yml",
+   "openapi/_original/avalara-portal-oauth-openapi.yml",
+   "openapi/_original/avalara-shared-company-service-openapi.yml",
+   "openapi/_original/avalara-shipping-verification-openapi.yml",
+   "openapi/_original/avalara-vat-reporting-openapi.yml",
+   "openapi/_original/avatax-apis-openapi.yml"
+  ]
+ },
+ {
+  "slug": "basware",
+  "specs": [
+   "openapi/_original/basware-authentication-openapi.json",
+   "openapi/_original/basware-data-extract-openapi.json",
+   "openapi/_original/basware-directory-openapi.json",
+   "openapi/_original/basware-p2p-openapi.json",
+   "openapi/_original/basware-push-notification-openapi.json",
+   "openapi/_original/basware-smart-pdf-openapi.json",
+   "openapi/_original/basware-user-permission-openapi.json",
+   "openapi/_original/basware-vault-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "bill",
+  "specs": [
+   "openapi/_original/bill-openapi.yml"
+  ]
+ },
+ {
+  "slug": "bokio",
+  "specs": [
+   "openapi/_original/bokio-company-api-openapi.yml",
+   "openapi/_original/bokio-general-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "brex",
+  "specs": [
+   "openapi/_original/brex-openapi.yml"
+  ]
+ },
+ {
+  "slug": "broadlume",
+  "specs": [
+   "openapi/_original/broadlume-bms-openapi.yml"
+  ]
+ },
+ {
+  "slug": "campfire",
+  "specs": [
+   "openapi/_original/campfire-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "campfire-hq",
+  "specs": [
+   "openapi/_original/campfire-hq-openapi.yml"
+  ]
+ },
+ {
+  "slug": "canix",
+  "specs": [
+   "openapi/_original/canix-openapi.yml"
+  ]
+ },
+ {
+  "slug": "cashflo",
+  "specs": [
+   "openapi/_original/cashflo-data-ingestion-openapi.json"
+  ]
+ },
+ {
+  "slug": "cmic",
+  "specs": [
+   "openapi/_original/cmic-construction-erp-openapi.yml"
+  ]
+ },
+ {
+  "slug": "codat",
+  "specs": [
+   "openapi/_original/codat-bank-feeds-openapi.json",
+   "openapi/_original/codat-lending-openapi.json",
+   "openapi/_original/codat-platform-openapi.json"
+  ]
+ },
+ {
+  "slug": "codat-io",
+  "specs": [
+   "openapi/_original/codat-io-openapi.yml"
+  ]
+ },
+ {
+  "slug": "concur",
+  "specs": [
+   "openapi/_original/sap-concur-allocations-api-openapi.yml",
+   "openapi/_original/sap-concur-comments-api-openapi.yml",
+   "openapi/_original/sap-concur-expense-allocations-api-openapi.yml",
+   "openapi/_original/sap-concur-expense-expense-entries-api-openapi.yml",
+   "openapi/_original/sap-concur-expense-expense-reports-api-openapi.yml",
+   "openapi/_original/sap-concur-expense-group-configurations-api-openapi.yml",
+   "openapi/_original/sap-concur-expense-payment-batches-api-openapi.yml",
+   "openapi/_original/sap-concur-expense-quick-expenses-api-openapi.yml",
+   "openapi/_original/sap-concur-expense-receipt-images-api-openapi.yml",
+   "openapi/_original/sap-concur-expenses-api-openapi.yml",
+   "openapi/_original/sap-concur-reports-api-openapi.yml",
+   "openapi/_original/sap-concur-workflows-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "conta-azul",
+  "specs": [
+   "openapi/_original/conta-azul-acquittance-openapi.yml",
+   "openapi/_original/conta-azul-charge-openapi.yml",
+   "openapi/_original/conta-azul-contracts-openapi.yml",
+   "openapi/_original/conta-azul-financial-openapi.yml",
+   "openapi/_original/conta-azul-inventory-openapi.yml",
+   "openapi/_original/conta-azul-proposal-openapi.yml",
+   "openapi/_original/conta-azul-protocol-openapi.yml",
+   "openapi/_original/conta-azul-sales-openapi.yml",
+   "openapi/_original/conta-azul-scheduled-sales-openapi.yml"
+  ]
+ },
+ {
+  "slug": "contalink",
+  "specs": [
+   "openapi/_original/contalink-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "coupa",
+  "specs": [
+   "openapi/_original/coupa-core-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "datarails",
+  "specs": [
+   "openapi/_original/datarails-financeos-mcp-openapi.json"
+  ]
+ },
+ {
+  "slug": "digits-com",
+  "specs": [
+   "openapi/_original/digits-com-openapi-original.json",
+   "openapi/_original/digits-com-openapi.yml"
+  ]
+ },
+ {
+  "slug": "doorloop",
+  "specs": [
+   "openapi/_original/doorloop-api-reference-openapi.yml",
+   "openapi/_original/doorloop-api-reference-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "duvo-ai",
+  "specs": [
+   "openapi/_original/duvo-ai-openapi-original.json",
+   "openapi/_original/duvoai-agent-folders-api-openapi.yml",
+   "openapi/_original/duvoai-agent-memory-api-openapi.yml",
+   "openapi/_original/duvoai-agents-api-openapi.yml",
+   "openapi/_original/duvoai-case-triggers-api-openapi.yml",
+   "openapi/_original/duvoai-cases-api-openapi.yml",
+   "openapi/_original/duvoai-clarity-api-openapi.yml",
+   "openapi/_original/duvoai-clarityv2-api-openapi.yml",
+   "openapi/_original/duvoai-connections-api-openapi.yml",
+   "openapi/_original/duvoai-credentials-api-openapi.yml",
+   "openapi/_original/duvoai-duvo-pulse-api-openapi.yml",
+   "openapi/_original/duvoai-files-api-openapi.yml",
+   "openapi/_original/duvoai-integrations-api-openapi.yml",
+   "openapi/_original/duvoai-mcp-api-openapi.yml",
+   "openapi/_original/duvoai-organizations-api-openapi.yml",
+   "openapi/_original/duvoai-plugins-api-openapi.yml",
+   "openapi/_original/duvoai-queues-api-openapi.yml",
+   "openapi/_original/duvoai-revision-integrations-api-openapi.yml",
+   "openapi/_original/duvoai-revisions-api-openapi.yml",
+   "openapi/_original/duvoai-runs-api-openapi.yml",
+   "openapi/_original/duvoai-sandboxes-api-openapi.yml",
+   "openapi/_original/duvoai-schedules-api-openapi.yml",
+   "openapi/_original/duvoai-secrets-api-openapi.yml",
+   "openapi/_original/duvoai-skills-api-openapi.yml",
+   "openapi/_original/duvoai-suggestions-api-openapi.yml",
+   "openapi/_original/duvoai-team-api-openapi.yml",
+   "openapi/_original/duvoai-triggers-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "eci-solutions",
+  "specs": [
+   "openapi/_original/eci-solutions-apar-commerce-openapi.json",
+   "openapi/_original/eci-solutions-authentication-openapi.json",
+   "openapi/_original/eci-solutions-currency-openapi.json",
+   "openapi/_original/eci-solutions-ecommerce-openapi.json",
+   "openapi/_original/eci-solutions-einvoice-openapi.json",
+   "openapi/_original/eci-solutions-erp-v1-openapi.json",
+   "openapi/_original/eci-solutions-erp-v2-1-openapi.json",
+   "openapi/_original/eci-solutions-erp-v2-openapi.json",
+   "openapi/_original/eci-solutions-financial-v1-openapi.json",
+   "openapi/_original/eci-solutions-financial-v2-openapi.json",
+   "openapi/_original/eci-solutions-jobboss2-openapi.json",
+   "openapi/_original/eci-solutions-lasso-crm-openapi.yml",
+   "openapi/_original/eci-solutions-m1-openapi.json",
+   "openapi/_original/eci-solutions-management-openapi.json",
+   "openapi/_original/eci-solutions-notification-openapi.json",
+   "openapi/_original/eci-solutions-office-openapi.json",
+   "openapi/_original/eci-solutions-payment-openapi.json",
+   "openapi/_original/eci-solutions-shipping-openapi.json"
+  ]
+ },
+ {
+  "slug": "emburse",
+  "specs": [
+   "openapi/_original/emburse-enterprise-allocation-openapi.yml",
+   "openapi/_original/emburse-enterprise-contacts-openapi.yml",
+   "openapi/_original/emburse-enterprise-entity-openapi.yml",
+   "openapi/_original/emburse-enterprise-expense-image-openapi.yml",
+   "openapi/_original/emburse-enterprise-expense-openapi.yml",
+   "openapi/_original/emburse-enterprise-exported-reports-openapi.yml",
+   "openapi/_original/emburse-enterprise-invoice-openapi.yml",
+   "openapi/_original/emburse-enterprise-paid-expense-openapi.yml",
+   "openapi/_original/emburse-enterprise-person-openapi.yml",
+   "openapi/_original/emburse-enterprise-preapproval-openapi.yml",
+   "openapi/_original/emburse-enterprise-purchase-order-openapi.yml",
+   "openapi/_original/emburse-enterprise-vendor-openapi.yml",
+   "openapi/_original/emburse-virtual-cards-openapi.yml"
+  ]
+ },
+ {
+  "slug": "end-close",
+  "specs": [
+   "openapi/_original/end-close-openapi.json"
+  ]
+ },
+ {
+  "slug": "erpnext",
+  "specs": [
+   "openapi/_original/openapi.yaml"
+  ]
+ },
+ {
+  "slug": "exact-online",
+  "specs": [
+   "openapi/_original/exact-online-openapi.yml"
+  ]
+ },
+ {
+  "slug": "expensify",
+  "specs": [
+   "openapi/_original/expensify-openapi.yml"
+  ]
+ },
+ {
+  "slug": "fieldguide",
+  "specs": [
+   "openapi/_original/fieldguide-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "float-financial",
+  "specs": [
+   "openapi/_original/float-financial-openapi.json",
+   "openapi/_original/float-financial-openapi.yml"
+  ]
+ },
+ {
+  "slug": "flowaccount",
+  "specs": [
+   "openapi/_original/flowaccount-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "fortnox",
+  "specs": [
+   "openapi/_original/fortnox-openapi.yml"
+  ]
+ },
+ {
+  "slug": "forwardai",
+  "specs": [
+   "openapi/_original/forwardai-precise-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "found-business",
+  "specs": [
+   "openapi/_original/found-business-openapi.yml"
+  ]
+ },
+ {
+  "slug": "freeagent",
+  "specs": [
+   "openapi/_original/freeagent-openapi.yml"
+  ]
+ },
+ {
+  "slug": "freee",
+  "specs": [
+   "openapi/_original/freee-openapi.yml"
+  ]
+ },
+ {
+  "slug": "freshbooks",
+  "specs": [
+   "openapi/_original/freshbooks-openapi.yml"
+  ]
+ },
+ {
+  "slug": "fulcrumpro",
+  "specs": [
+   "openapi/_original/fulcrumpro-openapi.json"
+  ]
+ },
+ {
+  "slug": "fulfil-io",
+  "specs": [
+   "openapi/_original/fulfil-io-openapi.yml"
+  ]
+ },
+ {
+  "slug": "fund-that-flip",
+  "specs": [
+   "openapi/_original/fund-that-flip-flipperforce-public-api.json",
+   "openapi/_original/fund-that-flip-flipperforce-public-api.yml"
+  ]
+ },
+ {
+  "slug": "fyle",
+  "specs": [
+   "openapi/_original/fyle-openapi.yml"
+  ]
+ },
+ {
+  "slug": "holded",
+  "specs": [
+   "openapi/_original/holded-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ifs",
+  "specs": [
+   "openapi/_original/ifs-cloud-erp-openapi.yml"
+  ]
+ },
+ {
+  "slug": "infor",
+  "specs": [
+   "openapi/_original/infor-openapi.json"
+  ]
+ },
+ {
+  "slug": "intuit",
+  "specs": [
+   "openapi/_original/quickbooks-accounting.yml"
+  ]
+ },
+ {
+  "slug": "invoice-ninja",
+  "specs": [
+   "openapi/_original/invoice-ninja-openapi.yml"
+  ]
+ },
+ {
+  "slug": "karbonhq",
+  "specs": [
+   "openapi/_original/KarbonAPI.json",
+   "openapi/_original/karbonhq-openapi.yml"
+  ]
+ },
+ {
+  "slug": "katana",
+  "specs": [
+   "openapi/_original/katana-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "kognitos",
+  "specs": [
+   "openapi/_original/kognitos-openapi.yaml",
+   "openapi/_original/kognitos-openapi.yml"
+  ]
+ },
+ {
+  "slug": "laurel",
+  "specs": [
+   "openapi/_original/laurel-identity-openapi-original.json",
+   "openapi/_original/laurel-ingestion-openapi-original.json",
+   "openapi/_original/laurel-time-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "leanlaw",
+  "specs": [
+   "openapi/_original/leanlaw-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "leaseaccelerator",
+  "specs": [
+   "openapi/_original/leaseaccelerator-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "lexoffice",
+  "specs": [
+   "openapi/_original/lexoffice-openapi.yml"
+  ]
+ },
+ {
+  "slug": "light",
+  "specs": [
+   "openapi/_original/light-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "lili",
+  "specs": [
+   "openapi/_original/lili-application-api-openapi.yml",
+   "openapi/_original/lili-customer-management-api-openapi.yml",
+   "openapi/_original/lili-webhooks-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "maesn",
+  "specs": [
+   "openapi/_original/maesn-openapi.json"
+  ]
+ },
+ {
+  "slug": "marginedge",
+  "specs": [
+   "openapi/_original/marginedge-openapi.yml"
+  ]
+ },
+ {
+  "slug": "mercoa",
+  "specs": [
+   "openapi/_original/mercoa-openapi.yml"
+  ]
+ },
+ {
+  "slug": "merge",
+  "specs": [
+   "openapi/_original/merge-accounting-api-openapi.yaml",
+   "openapi/_original/merge-agent-handler-api-openapi.yaml",
+   "openapi/_original/merge-ats-api-openapi.yaml",
+   "openapi/_original/merge-chat-api-openapi.yaml",
+   "openapi/_original/merge-crm-api-openapi.yaml",
+   "openapi/_original/merge-file-storage-api-openapi.yaml",
+   "openapi/_original/merge-gateway-api-openapi.yaml",
+   "openapi/_original/merge-hris-api-openapi.yaml",
+   "openapi/_original/merge-knowledge-base-api-openapi.yaml",
+   "openapi/_original/merge-ticketing-api-openapi.yaml"
+  ]
+ },
+ {
+  "slug": "microsoft-dynamics",
+  "specs": [
+   "openapi/_original/microsoft-dynamics-business-central-openapi.yml",
+   "openapi/_original/microsoft-dynamics-dataverse-openapi.yml",
+   "openapi/_original/microsoft-dynamics-finance-operations-openapi.yml"
+  ]
+ },
+ {
+  "slug": "microsoft-dynamics-365",
+  "specs": [
+   "openapi/_original/microsoft-dynamics-365-dataverse-web-api-openapi.yml",
+   "openapi/_original/microsoft-dynamics-activities-api-openapi.yml",
+   "openapi/_original/microsoft-dynamics-cases-api-openapi.yml",
+   "openapi/_original/microsoft-dynamics-companies-api-openapi.yml",
+   "openapi/_original/microsoft-dynamics-customers-api-openapi.yml",
+   "openapi/_original/microsoft-dynamics-employees-api-openapi.yml",
+   "openapi/_original/microsoft-dynamics-general-ledger-api-openapi.yml",
+   "openapi/_original/microsoft-dynamics-human-resources-api-openapi.yml",
+   "openapi/_original/microsoft-dynamics-items-api-openapi.yml",
+   "openapi/_original/microsoft-dynamics-journals-api-openapi.yml",
+   "openapi/_original/microsoft-dynamics-leads-api-openapi.yml",
+   "openapi/_original/microsoft-dynamics-products-api-openapi.yml",
+   "openapi/_original/microsoft-dynamics-purchase-invoices-api-openapi.yml",
+   "openapi/_original/microsoft-dynamics-purchase-orders-api-openapi.yml",
+   "openapi/_original/microsoft-dynamics-sales-invoices-api-openapi.yml",
+   "openapi/_original/microsoft-dynamics-sales-orders-api-openapi.yml",
+   "openapi/_original/microsoft-dynamics-vendors-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "microsoft-dynamics-365-business-central",
+  "specs": [
+   "openapi/_original/microsoft-dynamics-365-business-central-openapi.yml"
+  ]
+ },
+ {
+  "slug": "mileiq",
+  "specs": [
+   "openapi/_original/mileiq-external-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "monite",
+  "specs": [
+   "openapi/_original/monite-openapi-2023-09-01.json",
+   "openapi/_original/monite-openapi-2024-01-31.json",
+   "openapi/_original/monite-openapi-2024-05-25.json",
+   "openapi/_original/monite-openapi-2024-05-25.yaml",
+   "openapi/_original/monite-openapi.yml"
+  ]
+ },
+ {
+  "slug": "navision",
+  "specs": [
+   "openapi/_original/admin-center-api.yml",
+   "openapi/_original/automation-api.yml",
+   "openapi/_original/business-central-api-v2.yml"
+  ]
+ },
+ {
+  "slug": "notch-financial",
+  "specs": [
+   "openapi/_original/notch-financial-openapi.yml"
+  ]
+ },
+ {
+  "slug": "odoo",
+  "specs": [
+   "openapi/_original/odoo-openapi.yml"
+  ]
+ },
+ {
+  "slug": "open-financial",
+  "specs": [
+   "openapi/_original/open-financial-1-openapi.yml",
+   "openapi/_original/open-financial-1-readme-slices.json",
+   "openapi/_original/open-financial-2-openapi.yml",
+   "openapi/_original/open-financial-2-readme-slices.json",
+   "openapi/_original/open-financial-4-openapi.yml",
+   "openapi/_original/open-financial-4-readme-slices.json",
+   "openapi/_original/open-financial-5-openapi.yml",
+   "openapi/_original/open-financial-5-readme-slices.json",
+   "openapi/_original/open-financial-6-openapi.yml",
+   "openapi/_original/open-financial-6-readme-slices.json",
+   "openapi/_original/open-financial-8-openapi.yml",
+   "openapi/_original/open-financial-8-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "openenvoy",
+  "specs": [
+   "openapi/_original/openenvoy-openapi.json"
+  ]
+ },
+ {
+  "slug": "opengov",
+  "specs": [
+   "openapi/_original/opengov-budgeting-performance-openapi.yml",
+   "openapi/_original/opengov-enterprise-asset-management-openapi.yml",
+   "openapi/_original/opengov-open-data-ckan-openapi.yml",
+   "openapi/_original/opengov-permitting-licensing-v1-openapi-original.yml",
+   "openapi/_original/opengov-permitting-licensing-v1-openapi.yml",
+   "openapi/_original/opengov-permitting-licensing-v2-openapi-original.yml",
+   "openapi/_original/opengov-permitting-licensing-v2-openapi.yml",
+   "openapi/_original/opengov-procurement-v1-openapi.yml",
+   "openapi/_original/opengov-procurement-v2-openapi.yml",
+   "openapi/_original/opengov-purchase-order-openapi.yml",
+   "openapi/_original/opengov-receipt-openapi.yml",
+   "openapi/_original/opengov-vendor-management-openapi.yml"
+  ]
+ },
+ {
+  "slug": "oracle-e-business-suite",
+  "specs": [
+   "openapi/_original/ecommerce-gateway-api.yml",
+   "openapi/_original/financial-services-api.yml",
+   "openapi/_original/human-resources-api.yml",
+   "openapi/_original/isg-rest-api.yml",
+   "openapi/_original/manufacturing-api.yml",
+   "openapi/_original/supply-chain-api.yml"
+  ]
+ },
+ {
+  "slug": "oracle-financial-applications",
+  "specs": [
+   "openapi/_original/oracle-financial-applications-openapi.yml"
+  ]
+ },
+ {
+  "slug": "oracle-financials",
+  "specs": [
+   "openapi/_original/oracle-financial-applications-cash-management-api-openapi.yml",
+   "openapi/_original/oracle-financial-applications-fixed-assets-api-openapi.yml",
+   "openapi/_original/oracle-financial-applications-general-ledger-api-openapi.yml",
+   "openapi/_original/oracle-financial-applications-payables-api-openapi.yml",
+   "openapi/_original/oracle-financial-applications-receivables-api-openapi.yml",
+   "openapi/_original/oracle-financials-general-ledger-openapi.yml",
+   "openapi/_original/oracle-general-ledger-accounting-periods-api-openapi.yml",
+   "openapi/_original/oracle-general-ledger-budgetary-control-api-openapi.yml",
+   "openapi/_original/oracle-general-ledger-erp-integrations-api-openapi.yml",
+   "openapi/_original/oracle-general-ledger-intercompany-api-openapi.yml",
+   "openapi/_original/oracle-general-ledger-journal-batches-api-openapi.yml",
+   "openapi/_original/oracle-general-ledger-ledger-balances-api-openapi.yml",
+   "openapi/_original/oracle-general-ledger-ledger-options-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "oracle-fusion",
+  "specs": [
+   "openapi/_original/oracle-fusion-common-openapi.yml",
+   "openapi/_original/oracle-fusion-cx-sales-openapi.yml",
+   "openapi/_original/oracle-fusion-epm-openapi.yml",
+   "openapi/_original/oracle-fusion-erp-openapi.yml",
+   "openapi/_original/oracle-fusion-hcm-openapi.yml",
+   "openapi/_original/oracle-fusion-project-management-openapi.yml",
+   "openapi/_original/oracle-fusion-scm-openapi.yml"
+  ]
+ },
+ {
+  "slug": "oracle-general-ledger",
+  "specs": [
+   "openapi/_original/oracle-general-ledger-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ottimate",
+  "specs": [
+   "openapi/_original/plateiq-accounts-api-openapi.yml",
+   "openapi/_original/plateiq-batch-api-openapi.yml",
+   "openapi/_original/plateiq-catalog-api-openapi.yml",
+   "openapi/_original/plateiq-dimensions-api-openapi.yml",
+   "openapi/_original/plateiq-invoices-api-openapi.yml",
+   "openapi/_original/plateiq-oauth-api-openapi.yml",
+   "openapi/_original/plateiq-openapi.json",
+   "openapi/_original/plateiq-openapi.yaml",
+   "openapi/_original/plateiq-purchase-orders-api-openapi.yml",
+   "openapi/_original/plateiq-receipts-api-openapi.yml",
+   "openapi/_original/plateiq-vendors-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "paperless-parts",
+  "specs": [
+   "openapi/_original/paperless-parts-v1-openapi-original.yml",
+   "openapi/_original/paperless-parts-v1-openapi.yml",
+   "openapi/_original/paperless-parts-v2-openapi-original.yml",
+   "openapi/_original/paperless-parts-v2-openapi.yml"
+  ]
+ },
+ {
+  "slug": "para-t",
+  "specs": [
+   "openapi/_original/para-t-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "payem",
+  "specs": [
+   "openapi/_original/payem-ai-discovery-openapi.json",
+   "openapi/_original/payem-openapi.json",
+   "openapi/_original/payem-openapi_2.json"
+  ]
+ },
+ {
+  "slug": "paymate",
+  "specs": [
+   "openapi/_original/paymate-global-partner-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "paystand",
+  "specs": [
+   "openapi/_original/paystand-sandbox-open-api-readme-slices.json",
+   "openapi/_original/paystand-sandbox-secure-api-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "pennylane",
+  "specs": [
+   "openapi/_original/pennylane-openapi.yml"
+  ]
+ },
+ {
+  "slug": "peoplesoft",
+  "specs": [
+   "openapi/_original/application-services-framework.yml",
+   "openapi/_original/approval-workflow-engine.yml",
+   "openapi/_original/campus-solutions.yml",
+   "openapi/_original/chatbot-integration.yml",
+   "openapi/_original/cloud-manager.yml",
+   "openapi/_original/component-interface.yml",
+   "openapi/_original/crm.yml",
+   "openapi/_original/enterprise-performance-management.yml",
+   "openapi/_original/financials.yml",
+   "openapi/_original/hcm.yml",
+   "openapi/_original/integration-broker.yml",
+   "openapi/_original/interaction-hub.yml",
+   "openapi/_original/notification-framework.yml",
+   "openapi/_original/pivot-grid.yml",
+   "openapi/_original/process-scheduler.yml",
+   "openapi/_original/query.yml",
+   "openapi/_original/recruiting-talent-management.yml",
+   "openapi/_original/rest-api.yml",
+   "openapi/_original/search-framework.yml",
+   "openapi/_original/supply-chain-management.yml",
+   "openapi/_original/update-manager.yml"
+  ]
+ },
+ {
+  "slug": "pleo",
+  "specs": [
+   "openapi/_original/pleo-app-marketplace-openapi.yml",
+   "openapi/_original/pleo-bookkeeping-core-openapi.yml",
+   "openapi/_original/pleo-chart-of-accounts-openapi.yml",
+   "openapi/_original/pleo-export-openapi.yml",
+   "openapi/_original/pleo-gjoll-openapi.yml",
+   "openapi/_original/pleo-oberon-openapi.yml",
+   "openapi/_original/pleo-tags-openapi.yml",
+   "openapi/_original/pleo-tax-code-openapi.yml",
+   "openapi/_original/pleo-triton-openapi.yml",
+   "openapi/_original/pleo-vendors-openapi.yml",
+   "openapi/_original/pleo-webhook-subscriptions-openapi.yml"
+  ]
+ },
+ {
+  "slug": "pliant",
+  "specs": [
+   "openapi/_original/pliant-customer-api-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "procore",
+  "specs": [
+   "openapi/_original/procore-openapi.json"
+  ]
+ },
+ {
+  "slug": "procurify",
+  "specs": [
+   "openapi/_original/procurify-procurify-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "puzzle",
+  "specs": [
+   "openapi/_original/puzzle-openapi-original.json",
+   "openapi/_original/puzzle-openapi.yml"
+  ]
+ },
+ {
+  "slug": "qargo",
+  "specs": [
+   "openapi/_original/qargo-tms-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "qubiqle",
+  "specs": [
+   "openapi/_original/qubiqle-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "quickbooks-online",
+  "specs": [
+   "openapi/_original/quickbooks-online-openapi.yml"
+  ]
+ },
+ {
+  "slug": "ramp",
+  "specs": [
+   "openapi/_original/ramp-developer-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "remitian",
+  "specs": [
+   "openapi/_original/remitian-tax-payment-openapi.yml"
+  ]
+ },
+ {
+  "slug": "resourcly",
+  "specs": [
+   "openapi/_original/resourcly-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "restaurant365",
+  "specs": [
+   "openapi/_original/restaurant365-odata-connector-openapi.yml",
+   "openapi/_original/restaurant365-r365-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "rillet",
+  "specs": [
+   "openapi/_original/rillet-accounting-api-openapi.json"
+  ]
+ },
+ {
+  "slug": "rossum",
+  "specs": [
+   "openapi/_original/rossum-openapi.yml"
+  ]
+ },
+ {
+  "slug": "routable",
+  "specs": [
+   "openapi/_original/routable-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sage",
+  "specs": [
+   "openapi/_original/sage-accounting-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sap",
+  "specs": [
+   "openapi/_original/sap-ai-core-openapi.yml",
+   "openapi/_original/sap-business-one-service-layer-openapi.yml",
+   "openapi/_original/sap-s4hana-cloud-business-partner-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sap-business-one",
+  "specs": [
+   "openapi/_original/sap-business-one-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sap-bydesign",
+  "specs": [
+   "openapi/_original/sap-bydesign-odata-api.json"
+  ]
+ },
+ {
+  "slug": "sap-concur-expense",
+  "specs": [
+   "openapi/_original/sap-concur-expense-report-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sap-s4hana",
+  "specs": [
+   "openapi/_original/sap-s4hana-sales-order-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sap-sales-and-distribution-sd",
+  "specs": [
+   "openapi/_original/sap-sd-billing-document-openapi.yml",
+   "openapi/_original/sap-sd-credit-management-openapi.yml",
+   "openapi/_original/sap-sd-credit-memo-request-openapi.yml",
+   "openapi/_original/sap-sd-customer-master-data-openapi.yml",
+   "openapi/_original/sap-sd-customer-material-openapi.yml",
+   "openapi/_original/sap-sd-customer-return-openapi.yml",
+   "openapi/_original/sap-sd-customer-returns-delivery-openapi.yml",
+   "openapi/_original/sap-sd-debit-memo-request-openapi.yml",
+   "openapi/_original/sap-sd-inbound-delivery-openapi.yml",
+   "openapi/_original/sap-sd-material-master-openapi.yml",
+   "openapi/_original/sap-sd-outbound-delivery-openapi.yml",
+   "openapi/_original/sap-sd-pricing-openapi.yml",
+   "openapi/_original/sap-sd-sales-contract-openapi.yml",
+   "openapi/_original/sap-sd-sales-inquiry-openapi.yml",
+   "openapi/_original/sap-sd-sales-order-openapi.yml",
+   "openapi/_original/sap-sd-sales-quotation-openapi.yml",
+   "openapi/_original/sap-sd-sales-scheduling-agreement-openapi.yml"
+  ]
+ },
+ {
+  "slug": "servicetitan",
+  "specs": [
+   "openapi/_original/servicetitan-accounting-api-openapi.yml",
+   "openapi/_original/servicetitan-crm-api-openapi.yml",
+   "openapi/_original/servicetitan-dispatch-api-openapi.yml",
+   "openapi/_original/servicetitan-equipment-systems-api-openapi.yml",
+   "openapi/_original/servicetitan-inventory-api-openapi.yml",
+   "openapi/_original/servicetitan-jpm-api-openapi.yml",
+   "openapi/_original/servicetitan-pricebook-api-openapi.yml",
+   "openapi/_original/servicetitan-settings-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sevdesk",
+  "specs": [
+   "openapi/_original/sevdesk-openapi.yml"
+  ]
+ },
+ {
+  "slug": "sibill",
+  "specs": [
+   "openapi/_original/sibill-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "silverfin",
+  "specs": [
+   "openapi/_original/silverfin-api-readme-slices.json",
+   "openapi/_original/silverfin-syncapi-openapi.yml",
+   "openapi/_original/silverfin-syncapi-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "spendesk",
+  "specs": [
+   "openapi/_original/spendesk-public-api-readme-slices.json"
+  ]
+ },
+ {
+  "slug": "storecove",
+  "specs": [
+   "openapi/_original/openapi-3.0-with-deprecated.json",
+   "openapi/_original/openapi-3.0.json",
+   "openapi/_original/openapi.json",
+   "openapi/_original/storecove-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tally",
+  "specs": [
+   "openapi/_original/tally-openapi.yml"
+  ]
+ },
+ {
+  "slug": "temlavo",
+  "specs": [
+   "openapi/_original/temlavo-openapi.json"
+  ]
+ },
+ {
+  "slug": "tinvio-com",
+  "specs": [
+   "openapi/_original/tinvio-com-openapi-original.yaml",
+   "openapi/_original/tinvio-com-openapi.yml"
+  ]
+ },
+ {
+  "slug": "tradeshift",
+  "specs": [
+   "openapi/_original/tradeshift-external-api-openapi.yml",
+   "openapi/_original/tradeshift-mcp-bridge-openapi.json",
+   "openapi/_original/tradeshift-mcp-bridge-openapi.yml",
+   "openapi/_original/tradeshift-openapi.json"
+  ]
+ },
+ {
+  "slug": "vantaca",
+  "specs": [
+   "openapi/_original/vantaca-openapi.json"
+  ]
+ },
+ {
+  "slug": "vicai",
+  "specs": [
+   "openapi/_original/vicai-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "visma",
+  "specs": [
+   "openapi/_original/visma-eaccounting-api-openapi-original.json",
+   "openapi/_original/visma-net-erp-interactive-api-openapi-original.json",
+   "openapi/_original/visma-net-erp-service-api-openapi-original.json",
+   "openapi/_original/visma-payroll-api-v1-openapi-original.json",
+   "openapi/_original/visma-payroll-api-v1-openapi.json",
+   "openapi/_original/visma-payroll-api-v2-openapi-original.json",
+   "openapi/_original/visma-payroll-api-v2-openapi.json"
+  ]
+ },
+ {
+  "slug": "weclapp",
+  "specs": [
+   "openapi/_original/weclapp-openapi.yml"
+  ]
+ },
+ {
+  "slug": "weel",
+  "specs": [
+   "openapi/_original/weel-openapi.yml"
+  ]
+ },
+ {
+  "slug": "workday",
+  "specs": [
+   "openapi/_original/absenceManagement.yml",
+   "openapi/_original/benefits.yml",
+   "openapi/_original/common.yml",
+   "openapi/_original/compensation.yml",
+   "openapi/_original/financialManagement.yml",
+   "openapi/_original/hcm.yml",
+   "openapi/_original/payroll.yml",
+   "openapi/_original/performanceManagement.yml",
+   "openapi/_original/person.yml",
+   "openapi/_original/prismAnalytics.yml",
+   "openapi/_original/raas.yml",
+   "openapi/_original/recruiting.yml",
+   "openapi/_original/staffing.yml",
+   "openapi/_original/talent.yml",
+   "openapi/_original/timeTracking.yml",
+   "openapi/_original/wql.yml"
+  ]
+ },
+ {
+  "slug": "workday-business-processes",
+  "specs": [
+   "openapi/_original/workday-business-processes-business-process-openapi.yml",
+   "openapi/_original/workday-business-processes-business-process-v1-changelog.json",
+   "openapi/_original/workday-business-processes-business-process-v1-changelog_2.json",
+   "openapi/_original/workday-business-processes-business-process-v1-openapi.json",
+   "openapi/_original/workday-business-processes-custom-business-process-config-openapi.yml",
+   "openapi/_original/workday-business-processes-custom-business-process-config-v1-openapi.json"
+  ]
+ },
+ {
+  "slug": "workday-finance",
+  "specs": [
+   "openapi/_original/workday-finance-financial-management-openapi.yml",
+   "openapi/_original/workday-finance-procurement-openapi.yml"
+  ]
+ },
+ {
+  "slug": "workday-financials",
+  "specs": [
+   "openapi/_original/workday-financials-cash-management-openapi.yml",
+   "openapi/_original/workday-financials-expenses-openapi.yml",
+   "openapi/_original/workday-financials-financial-accounting-openapi.yml",
+   "openapi/_original/workday-financials-financial-management-openapi.yml",
+   "openapi/_original/workday-financials-procurement-openapi.yml",
+   "openapi/_original/workday-financials-reporting-openapi.yml",
+   "openapi/_original/workday-financials-revenue-management-openapi.yml"
+  ]
+ },
+ {
+  "slug": "workday-integration",
+  "specs": [
+   "openapi/_original/workday-integration-absence-management-openapi.yml",
+   "openapi/_original/workday-integration-aca-partner-integrations-openapi.yml",
+   "openapi/_original/workday-integration-academic-advising-openapi.yml",
+   "openapi/_original/workday-integration-academic-foundation-openapi.yml",
+   "openapi/_original/workday-integration-admissions-openapi.yml",
+   "openapi/_original/workday-integration-adoption-openapi.yml",
+   "openapi/_original/workday-integration-benefits-administration-openapi.yml",
+   "openapi/_original/workday-integration-benefits-partner-program-integrations-openapi.yml",
+   "openapi/_original/workday-integration-campus-engagement-openapi.yml",
+   "openapi/_original/workday-integration-cash-management-openapi.yml",
+   "openapi/_original/workday-integration-compensation-openapi.yml",
+   "openapi/_original/workday-integration-compensation-review-openapi.yml",
+   "openapi/_original/workday-integration-connect-openapi.yml",
+   "openapi/_original/workday-integration-drive-openapi.yml",
+   "openapi/_original/workday-integration-dynamic-document-generation-openapi.yml",
+   "openapi/_original/workday-integration-extensibility-openapi.yml",
+   "openapi/_original/workday-integration-external-integrations-openapi.yml",
+   "openapi/_original/workday-integration-financial-aid-openapi.yml",
+   "openapi/_original/workday-integration-financial-management-openapi.yml",
+   "openapi/_original/workday-integration-flex-team-openapi.yml",
+   "openapi/_original/workday-integration-human-capital-management-openapi.yml",
+   "openapi/_original/workday-integration-identity-management-openapi.yml",
+   "openapi/_original/workday-integration-integrations-openapi.yml",
+   "openapi/_original/workday-integration-inventory-openapi.yml",
+   "openapi/_original/workday-integration-learning-openapi.yml",
+   "openapi/_original/workday-integration-metadata-translations-openapi.yml",
+   "openapi/_original/workday-integration-moments-openapi.yml",
+   "openapi/_original/workday-integration-notification-openapi.yml",
+   "openapi/_original/workday-integration-org-studio-openapi.yml",
+   "openapi/_original/workday-integration-payroll-aus-openapi.yml",
+   "openapi/_original/workday-integration-payroll-can-openapi.yml",
+   "openapi/_original/workday-integration-payroll-fra-openapi.yml",
+   "openapi/_original/workday-integration-payroll-gbr-openapi.yml",
+   "openapi/_original/workday-integration-payroll-interface-openapi.yml",
+   "openapi/_original/workday-integration-payroll-openapi.yml",
+   "openapi/_original/workday-integration-performance-management-openapi.yml",
+   "openapi/_original/workday-integration-prism-analytics-openapi.yml",
+   "openapi/_original/workday-integration-professional-services-automation-openapi.yml",
+   "openapi/_original/workday-integration-recruiting-openapi.yml",
+   "openapi/_original/workday-integration-requests-openapi.yml",
+   "openapi/_original/workday-integration-resource-management-openapi.yml",
+   "openapi/_original/workday-integration-revenue-management-openapi.yml",
+   "openapi/_original/workday-integration-scheduling-openapi.yml",
+   "openapi/_original/workday-integration-settlement-services-openapi.yml",
+   "openapi/_original/workday-integration-staffing-openapi.yml",
+   "openapi/_original/workday-integration-student-core-openapi.yml",
+   "openapi/_original/workday-integration-student-finance-openapi.yml",
+   "openapi/_original/workday-integration-student-records-openapi.yml",
+   "openapi/_original/workday-integration-student-recruiting-openapi.yml",
+   "openapi/_original/workday-integration-student-transfer-credit-openapi.yml",
+   "openapi/_original/workday-integration-talent-openapi.yml",
+   "openapi/_original/workday-integration-tenant-data-translation-openapi.yml",
+   "openapi/_original/workday-integration-time-tracking-openapi.yml",
+   "openapi/_original/workday-integration-workforce-planning-openapi.yml"
+  ]
+ },
+ {
+  "slug": "workday-integrations",
+  "specs": [
+   "openapi/_original/workday-integrations-prism-analytics-openapi.yml",
+   "openapi/_original/workday-integrations-raas-openapi.yml",
+   "openapi/_original/workday-integrations-rest-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "workday-report-writer",
+  "specs": [
+   "openapi/_original/v1.2.json",
+   "openapi/_original/workday-report-writer-prism-analytics-openapi.yml",
+   "openapi/_original/workday-report-writer-raas-openapi.yml",
+   "openapi/_original/workday-report-writer-wql-openapi.yml"
+  ]
+ },
+ {
+  "slug": "workist",
+  "specs": [
+   "openapi/_original/workist-integrations-openapi-original.yml"
+  ]
+ },
+ {
+  "slug": "xentral",
+  "specs": [
+   "openapi/_original/xentral-api-openapi-original.json",
+   "openapi/_original/xentral-documents-api-openapi-original.json"
+  ]
+ },
+ {
+  "slug": "xero",
+  "specs": [
+   "openapi/_original/xero-accountdata-openapi.yml",
+   "openapi/_original/xero-accounting-openapi.yml",
+   "openapi/_original/xero-app-store-openapi.yml",
+   "openapi/_original/xero-assets-openapi.yml",
+   "openapi/_original/xero-bankfeeds-openapi.yml",
+   "openapi/_original/xero-bankfeeds-v2-openapi.yml",
+   "openapi/_original/xero-files-openapi.yml",
+   "openapi/_original/xero-finance-openapi.yml",
+   "openapi/_original/xero-identity-openapi.yml",
+   "openapi/_original/xero-payroll-au-openapi.yml",
+   "openapi/_original/xero-payroll-au-v2-openapi.yml",
+   "openapi/_original/xero-payroll-nz-openapi.yml",
+   "openapi/_original/xero-payroll-uk-openapi.yml",
+   "openapi/_original/xero-projects-openapi.yml",
+   "openapi/_original/xero-webhooks-openapi.yml"
+  ]
+ },
+ {
+  "slug": "xero-accounting",
+  "specs": [
+   "openapi/_original/xero-accounting-openapi.yml"
+  ]
+ },
+ {
+  "slug": "yardi",
+  "specs": [
+   "openapi/_original/yardi-voyager-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "zenledger",
+  "specs": [
+   "openapi/_original/zenledger-aggregator-api-openapi.yml",
+   "openapi/_original/zenledger-compliance-api-openapi.yml"
+  ]
+ },
+ {
+  "slug": "zoho-books",
+  "specs": [
+   "openapi/_original/zoho-books-openapi.yml"
+  ]
+ },
+ {
+  "slug": "zoho-invoice",
+  "specs": [
+   "openapi/_original/zoho-invoice-openapi.yml"
+  ]
+ }
+]

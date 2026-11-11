@@ -1,0 +1,23 @@
+provider: opengov
+apis_io: https://apis.io/providers/opengov/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  vendor:
+    path_segment:
+    - vendors
+    properties:
+      id: vendorId
+      status: status
+      email: email
+      address: addresses
+      tax_id: taxId
+      phone: phoneNumber
+      updated_at: updatedAt
+      created_at: createdAt
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/opengov-vendor-management-openapi.yml#DELETE /api/v1/entities/{entityId}/vendors/{vendorKey}
+    - openapi/_original/opengov-vendor-management-openapi.yml#GET /api/v1/entities/{entityId}/vendors/{vendorKey}
+    - openapi/_original/opengov-vendor-management-openapi.yml#PATCH /api/v1/entities/{entityId}/vendors/{vendorKey}
+    - openapi/_original/opengov-vendor-management-openapi.yml#POST /api/v1/entities/{entityId}/vendors

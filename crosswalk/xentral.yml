@@ -1,0 +1,31 @@
+provider: xentral
+apis_io: https://apis.io/providers/xentral/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  vendor:
+    path_segment:
+    - suppliers
+    properties:
+      id: id
+      name: name
+      description: notes
+      updated_at: updatedAt
+      created_at: createdAt
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/xentral-api-openapi-original.json#DELETE /api/v1/suppliers/{id}
+    - openapi/_original/xentral-api-openapi-original.json#GET /api/v1/suppliers
+    - openapi/_original/xentral-api-openapi-original.json#GET /api/v1/suppliers/{id}
+    - openapi/_original/xentral-api-openapi-original.json#PATCH /api/v1/suppliers
+    - openapi/_original/xentral-api-openapi-original.json#PATCH /api/v1/suppliers/{id}
+  tax_rate:
+    path_segment:
+    - taxrates
+    properties:
+      rate: rate
+      name: name
+      type: type
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/xentral-api-openapi-original.json#GET /api/v1/taxRates/{countryCode}

@@ -1,0 +1,18 @@
+provider: oracle-fusion
+apis_io: https://apis.io/providers/oracle-fusion/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  vendor:
+    path_segment:
+    - suppliers
+    properties:
+      status:
+      - Status
+      - State
+      city: City
+      created_at: CreationDate
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/oracle-fusion-scm-openapi.yml#GET /fscmRestApi/resources/11.13.18.05/suppliers
+    - openapi/_original/oracle-fusion-scm-openapi.yml#POST /fscmRestApi/resources/11.13.18.05/suppliers

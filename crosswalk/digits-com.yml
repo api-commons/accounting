@@ -1,0 +1,15 @@
+provider: digits-com
+apis_io: https://apis.io/providers/digits-com/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  journal_entry:
+    path_segment:
+    - transactions
+    properties:
+      description: description
+      date: date
+      id: id
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/digits-com-openapi.yml#GET /ledger/transactions/{transactionId}

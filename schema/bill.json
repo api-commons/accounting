@@ -1,0 +1,197 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/accounting/main/schema/bill.json",
+  "title": "Bill",
+  "description": "The common bill in Accounting, distilled from 17 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "due_date": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.941,
+      "x-commons-providers": 16,
+      "x-commons-spellings": [
+        "due_date",
+        "dueDate",
+        "due_at"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.882,
+      "x-commons-providers": 15,
+      "x-commons-spellings": [
+        "id",
+        "uuid",
+        "guid",
+        "remote_id"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.765,
+      "x-commons-providers": 13,
+      "x-commons-spellings": [
+        "description",
+        "reference",
+        "note",
+        "memo"
+      ]
+    },
+    "lines": {
+      "type": "array",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.765,
+      "x-commons-providers": 13,
+      "x-commons-spellings": [
+        "lines",
+        "lineItems",
+        "items",
+        "line_items",
+        "$items"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.765,
+      "x-commons-providers": 13,
+      "x-commons-spellings": [
+        "status",
+        "archived",
+        "active"
+      ]
+    },
+    "vendor_id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.706,
+      "x-commons-providers": 12,
+      "x-commons-spellings": [
+        "vendor",
+        "vendorId",
+        "vendor_id",
+        "supplier",
+        "contactId",
+        "vendor_ref",
+        "contact",
+        "contact_id"
+      ]
+    },
+    "total": {
+      "type": "number",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.647,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "amount",
+        "total_amount",
+        "totalAmount"
+      ]
+    },
+    "currency": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.588,
+      "x-commons-providers": 10,
+      "x-commons-spellings": [
+        "currency",
+        "currencyCode",
+        "baseCurrency"
+      ]
+    },
+    "number": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.471,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "invoice_number",
+        "invoiceNumber",
+        "bill_number",
+        "docNumber",
+        "billNumber"
+      ]
+    },
+    "date": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.353,
+      "x-commons-providers": 6,
+      "x-commons-spellings": [
+        "issueDate",
+        "date",
+        "issue_date"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.294,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "created_at",
+        "createdDate",
+        "createdAt",
+        "date_created"
+      ],
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.294,
+      "x-commons-providers": 5,
+      "x-commons-spellings": [
+        "updated_at",
+        "updatedDate",
+        "updatedAt",
+        "updated"
+      ],
+      "format": "date-time"
+    },
+    "amount_due": {
+      "type": "number",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.235,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "amountDue",
+        "amount_due"
+      ]
+    },
+    "bill_date": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.235,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "bill_date",
+        "billDate"
+      ]
+    },
+    "tax_amount": {
+      "type": "number",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.235,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "tax_amount",
+        "taxAmount"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "accounting",
+    "concept": "bill",
+    "providers": 17,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

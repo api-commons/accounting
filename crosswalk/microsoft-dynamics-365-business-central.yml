@@ -1,0 +1,13 @@
+provider: microsoft-dynamics-365-business-central
+apis_io: https://apis.io/providers/microsoft-dynamics-365-business-central/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  vendor:
+    path_segment:
+    - vendors
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/microsoft-dynamics-365-business-central-openapi.yml#GET /companies({companyId})/vendors
+    - openapi/_original/microsoft-dynamics-365-business-central-openapi.yml#POST /companies({companyId})/vendors

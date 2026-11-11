@@ -1,0 +1,27 @@
+provider: ramp
+apis_io: https://apis.io/providers/ramp/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  vendor:
+    path_segment:
+    - vendors
+    properties:
+      id: id
+      name: name
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/ramp-developer-api-openapi.yml#GET /accounting/vendors
+  bill:
+    path_segment:
+    - bills
+    properties:
+      due_date: due_at
+      id: id
+      status: status
+      vendor_id: vendor_id
+      total: amount
+      number: invoice_number
+    core_coverage: 0.625
+    evidence:
+    - openapi/_original/ramp-developer-api-openapi.yml#GET /bills

@@ -1,0 +1,41 @@
+provider: bill
+apis_io: https://apis.io/providers/bill/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  vendor:
+    path_segment:
+    - vendors
+    properties:
+      name: name
+      email: email
+      address: address
+      tax_id: taxId
+      currency: currency
+      phone: phone
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/bill-openapi.yml#GET /vendors
+    - openapi/_original/bill-openapi.yml#GET /vendors/{vendorId}
+    - openapi/_original/bill-openapi.yml#PATCH /vendors/{vendorId}
+    - openapi/_original/bill-openapi.yml#POST /vendors
+  bill:
+    path_segment:
+    - bills
+    properties:
+      due_date: dueDate
+      id: id
+      description: description
+      status: archived
+      vendor_id: vendorId
+      total: amount
+      currency: currency
+      number: invoiceNumber
+      amount_due: amountDue
+    core_coverage: 0.875
+    evidence:
+    - openapi/_original/bill-openapi.yml#GET /bills
+    - openapi/_original/bill-openapi.yml#GET /bills/{billId}
+    - openapi/_original/bill-openapi.yml#PATCH /bills/{billId}
+    - openapi/_original/bill-openapi.yml#POST /bills
+    - openapi/_original/bill-openapi.yml#POST /bills/bulk

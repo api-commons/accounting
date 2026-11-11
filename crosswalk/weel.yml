@@ -1,0 +1,17 @@
+provider: weel
+apis_io: https://apis.io/providers/weel/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  tax_rate:
+    path_segment:
+    - tax-rates
+    properties:
+      code: code
+      id: id
+      rate: rate
+      name: name
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/weel-openapi.yml#GET /v1/businesses/{client_id}/tax-rates
+    - openapi/_original/weel-openapi.yml#GET /v1/businesses/{client_id}/tax-rates/{tax_rate_id}

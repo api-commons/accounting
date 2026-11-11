@@ -1,0 +1,183 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/accounting/main/schema/vendor.json",
+  "title": "Vendor",
+  "description": "The common vendor in Accounting, distilled from 39 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.744,
+      "x-commons-providers": 29,
+      "x-commons-spellings": [
+        "id",
+        "vendorId",
+        "uuid",
+        "internalId",
+        "GUID",
+        "remote_id",
+        "Id"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.692,
+      "x-commons-providers": 27,
+      "x-commons-spellings": [
+        "name",
+        "displayName",
+        "Name",
+        "display-name"
+      ]
+    },
+    "status": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.615,
+      "x-commons-providers": 24,
+      "x-commons-spellings": [
+        "status",
+        "state",
+        "active",
+        "is_active",
+        "Status",
+        "State",
+        "IsActive",
+        "isActive"
+      ]
+    },
+    "email": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.462,
+      "x-commons-providers": 18,
+      "x-commons-spellings": [
+        "email",
+        "emailAddress",
+        "emails",
+        "Email",
+        "email_address",
+        "EmailAddress"
+      ],
+      "format": "email"
+    },
+    "address": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.41,
+      "x-commons-providers": 16,
+      "x-commons-spellings": [
+        "address",
+        "addresses"
+      ]
+    },
+    "tax_id": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.41,
+      "x-commons-providers": 16,
+      "x-commons-spellings": [
+        "taxId",
+        "taxRegistrationNumber",
+        "tax_id",
+        "vatNumber",
+        "vat_number",
+        "taxNumber",
+        "tax-id",
+        "taxIdentifier"
+      ]
+    },
+    "currency": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.359,
+      "x-commons-providers": 14,
+      "x-commons-spellings": [
+        "currency",
+        "currencyCode",
+        "Currency",
+        "CurrencyCode"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.359,
+      "x-commons-providers": 14,
+      "x-commons-spellings": [
+        "notes",
+        "description",
+        "Description",
+        "memo",
+        "Note",
+        "Notes",
+        "note"
+      ]
+    },
+    "phone": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.333,
+      "x-commons-providers": 13,
+      "x-commons-spellings": [
+        "phone",
+        "phoneNumber",
+        "phone_number",
+        "phones"
+      ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.282,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "updated_at",
+        "updatedAt",
+        "updated-at",
+        "updatedDate",
+        "updated",
+        "dateModified"
+      ],
+      "format": "date-time"
+    },
+    "city": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.256,
+      "x-commons-providers": 10,
+      "x-commons-spellings": [
+        "city",
+        "City"
+      ]
+    },
+    "created_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.231,
+      "x-commons-providers": 9,
+      "x-commons-spellings": [
+        "createdAt",
+        "created_at",
+        "created-at",
+        "creationDate",
+        "CreationDate",
+        "created"
+      ],
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "accounting",
+    "concept": "vendor",
+    "providers": 39,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

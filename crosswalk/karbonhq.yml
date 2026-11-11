@@ -1,0 +1,14 @@
+provider: karbonhq
+apis_io: https://apis.io/providers/karbonhq/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  expense:
+    path_segment:
+    - expenses
+    properties:
+      description: Description
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/KarbonAPI.json#POST /v3/Expenses
+    - openapi/_original/karbonhq-openapi.yml#POST /v3/Expenses

@@ -1,0 +1,22 @@
+provider: ottimate
+apis_io: https://apis.io/providers/ottimate/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  vendor:
+    path_segment:
+    - vendors
+    properties:
+      status: state
+      email: email
+      phone: phone
+      updated_at: updated
+      city: city
+      created_at: created
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/plateiq-openapi.json#GET /vendors
+    - openapi/_original/plateiq-openapi.json#GET /vendors/{id}
+    - openapi/_original/plateiq-openapi.json#POST /vendors
+    - openapi/_original/plateiq-openapi.json#POST /vendors/bulk
+    - openapi/_original/plateiq-openapi.yaml#GET /vendors

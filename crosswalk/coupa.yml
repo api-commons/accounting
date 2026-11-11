@@ -1,0 +1,23 @@
+provider: coupa
+apis_io: https://apis.io/providers/coupa/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  vendor:
+    path_segment:
+    - suppliers
+    properties:
+      id: id
+      name:
+      - name
+      - display-name
+      status: status
+      tax_id: tax-id
+      updated_at: updated-at
+      created_at: created-at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/coupa-core-api-openapi.yml#GET /suppliers
+    - openapi/_original/coupa-core-api-openapi.yml#GET /suppliers/{id}
+    - openapi/_original/coupa-core-api-openapi.yml#POST /suppliers
+    - openapi/_original/coupa-core-api-openapi.yml#PUT /suppliers/{id}

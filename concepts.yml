@@ -1,0 +1,103 @@
+context: accounting
+name: Accounting
+intro: >-
+  The common accounting vocabulary -- the chart of accounts, the journal entries posted to
+  it, the vendors a business buys from and the bills they send, its expenses and its tax
+  rates -- distilled from the APIs that already exist. Invoices belong to the billing
+  context and payments to the payments context.
+tags: [Accounting, Bookkeeping, ERP, Accounts Payable, General Ledger, AP Automation, Financial Management]
+
+envelope: [_links, _pagination, _results, data, success, errors, warnings, count, total, page, meta, links,
+           value, results, next, previous, has_more, message, status_code, ids, next_page, previous_page,
+           page_info, cursor, total_count, per_page, total_pages, current_page, object, url, QueryResponse]
+
+common_fields:
+  id: [uuid, guid, object_id, record_id, remote_id, Id, ID, internal_id]
+  created_at: [created, created_date, date_created, create_time, creation_date, created_on, remote_created_at, create_date, MetaData]
+  updated_at: [updated, updated_date, modified_at, last_modified, date_modified, update_time, modified_date, modified, updated_date_utc, last_updated_time]
+  metadata: [meta_data, custom_fields, custom, attributes, properties, tracking_categories]
+  status: [state, active, is_active, archived]
+  name: [title, display_name, label, fully_qualified_name]
+  description: [memo, notes, note, narration, private_note, reference, details]
+  currency: [currency_code, currency_ref, base_currency]
+  date: [transaction_date, txn_date, posting_date, posted_at, entry_date, journal_date, issue_date]
+
+concepts:
+  ledger_account:
+    segments: [accounts, account, ledger_accounts, ledger-accounts, gl_accounts, gl-accounts, chart_of_accounts, chart-of-accounts, chartofaccounts, nominal_accounts, general_ledger_accounts]
+    requires: [journal_entry]
+    aliases:
+      number: [account_number, code, account_code, acct_num, nominal_code, gl_code]
+      type: [account_type, classification, category, class, account_class]
+      sub_type: [account_sub_type, subtype, detail_type]
+      parent_id: [parent, parent_account_id, parent_ref, parent_account]
+      balance: [current_balance, current_balance_with_sub_accounts, account_balance]
+  journal_entry:
+    segments: [journal_entries, journal-entries, journalentries, journals, journal, manual_journals, manual-journals, manualjournals, journal_entry, ledger_entries, transactions@ledger|general_ledger|general-ledger]
+    aliases:
+      lines: [line_items, journal_lines, journal_entry_lines, entries, line, journal_lines_list, postings]
+      number: [journal_number, doc_number, reference_number, entry_number]
+      total: [total_amount, amount]
+  vendor:
+    segments: [vendors, vendor, suppliers, supplier, payees, creditors]
+    aliases:
+      email: [email_address, primary_email_addr, emails]
+      phone: [phone_number, primary_phone, phones]
+      tax_id: [tax_number, tax_identifier, vat_number, tax_registration_number, ein]
+      address: [addresses, billing_address, bill_addr, mailing_address]
+      balance: [open_balance, outstanding_balance]
+  bill:
+    segments: [bills, bill, vendor_bills, vendor-bills, payables, purchase_invoices, purchase-invoices, supplier_invoices]
+    aliases:
+      vendor_id: [vendor, supplier_id, supplier, vendor_ref, contact_id, contact]
+      number: [bill_number, doc_number, invoice_number, reference_number]
+      total: [total_amount, amount, grand_total]
+      amount_due: [balance, balance_due, amount_remaining, outstanding]
+      due_date: [due_at, due_on, payment_due_date]
+      lines: [line_items, items, bill_lines, line]
+  expense:
+    segments: [expenses, expense, purchases, spend_money, expense_reports, expense-reports]
+    aliases:
+      amount: [total, total_amount, total_amt]
+      vendor_id: [vendor, payee, payee_ref, merchant, supplier_id, entity_ref]
+      account_id: [account, account_ref, expense_account, category]
+      payment_method: [payment_type, payment_method_ref]
+  tax_rate:
+    segments: [tax_rates, tax-rates, taxrates, tax_codes, tax-codes, taxcodes, taxes]
+    aliases:
+      rate: [percentage, effective_rate, rate_value, tax_rate, display_tax_rate]
+      code: [tax_code, tax_type, short_name]
+
+exclude:
+  journal_entry:
+    eci-solutions: /Contact/Journal is a contact activity journal
+duplicates:
+  microsoft-dynamics-365: [microsoft-dynamics, navision]
+  codat: [codat-io]
+  ottimate: [qubiqle]
+
+findings:
+  - "A bill agrees almost completely: vendor, due date, lines, total, currency and status are
+    all core. Accounts payable is the most standardised corner of accounting."
+  - "A ledger account agrees on its number, name, type, currency and balance -- the chart of
+    accounts is the same shape in every system that exposes it."
+  - "A journal entry agrees only on id, date and description: the lines that carry the
+    debits and credits are modelled differently everywhere."
+  - "Expenses agree on nothing but an id (14 providers): expense tools, card platforms and
+    ledgers each describe a spend differently."
+  - "The largest accounting platforms are thin or absent: Intuit's harvested spec covers only
+    invoices, customers and payments, and NetSuite, Wave and MYOB publish none the catalog
+    holds."
+decisions:
+  - "Invoices belong to billing and payments to payments; accounting does not duplicate
+    them. Its concepts are the ledger side."
+  - "A ledger account is `/ledger-accounts`, though most providers say `/accounts`: that word
+    is a bank account in banking and a login in identity. Bare `/accounts` counts only at a
+    provider that also exposes journal entries."
+  - "Vendors, bills, expenses and tax rates need no journal: inside an accounting cohort their
+    names are unambiguous, and requiring journals cost most of the providers."
+  - "`receipts` is not an expense: reviewed, it was goods received, cash receipts and receipt
+    images as often as spend."
+  - "Journal entries are `/journal-entries` (13 providers across spellings, against 9 for
+    `journals`)."
+  - "Duplicates merged: Microsoft Dynamics and Navision into Dynamics 365, Codat, Ottimate."

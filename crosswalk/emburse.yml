@@ -1,0 +1,18 @@
+provider: emburse
+apis_io: https://apis.io/providers/emburse/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  expense:
+    path_segment:
+    - expense-reports
+    properties:
+      created_at: createDate
+      currency: currencyCode
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/emburse-enterprise-expense-openapi.yml#DELETE /v1/expense-reports/{reportId}
+    - openapi/_original/emburse-enterprise-expense-openapi.yml#GET /v1/expense-reports
+    - openapi/_original/emburse-enterprise-expense-openapi.yml#GET /v1/expense-reports/{reportId}
+    - openapi/_original/emburse-enterprise-expense-openapi.yml#GET /v3/expense-reports
+    - openapi/_original/emburse-enterprise-expense-openapi.yml#GET /v3/expense-reports/{reportId}

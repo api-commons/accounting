@@ -1,0 +1,60 @@
+provider: doorloop
+apis_io: https://apis.io/providers/doorloop/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  vendor:
+    path_segment:
+    - vendors
+    properties:
+      id: id
+      name: name
+      status: active
+      email: emails
+      description: notes
+      phone: phones
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/doorloop-api-reference-openapi.yml#DELETE /vendors/{vendorId}
+    - openapi/_original/doorloop-api-reference-openapi.yml#GET /vendors
+    - openapi/_original/doorloop-api-reference-openapi.yml#GET /vendors/{vendorId}
+    - openapi/_original/doorloop-api-reference-openapi.yml#POST /vendors
+    - openapi/_original/doorloop-api-reference-openapi.yml#PUT /vendors/{vendorId}
+  bill:
+    path_segment:
+    - vendor-bills
+    properties:
+      due_date: dueDate
+      id: id
+      description:
+      - memo
+      - reference
+      lines: lines
+      vendor_id: vendor
+      total: totalAmount
+      date: date
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/doorloop-api-reference-openapi.yml#DELETE /vendor-bills/{vendorBillId}
+    - openapi/_original/doorloop-api-reference-openapi.yml#GET /vendor-bills
+    - openapi/_original/doorloop-api-reference-openapi.yml#GET /vendor-bills/{vendorBillId}
+    - openapi/_original/doorloop-api-reference-openapi.yml#POST /vendor-bills
+    - openapi/_original/doorloop-api-reference-openapi.yml#PUT /vendor-bills/{vendorBillId}
+  expense:
+    path_segment:
+    - expenses
+    properties:
+      id: id
+      date: date
+      description:
+      - memo
+      - reference
+      amount: totalAmount
+      payment_method: paymentMethod
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/doorloop-api-reference-openapi.yml#DELETE /expenses/{expenseId}
+    - openapi/_original/doorloop-api-reference-openapi.yml#GET /expenses
+    - openapi/_original/doorloop-api-reference-openapi.yml#GET /expenses/{expenseId}
+    - openapi/_original/doorloop-api-reference-openapi.yml#POST /expenses
+    - openapi/_original/doorloop-api-reference-openapi.yml#PUT /expenses/{expenseId}

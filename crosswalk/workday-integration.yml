@@ -1,0 +1,16 @@
+provider: workday-integration
+apis_io: https://apis.io/providers/workday-integration/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  vendor:
+    path_segment:
+    - suppliers
+    properties:
+      id: id
+      status: status
+      currency: currency
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/workday-integration-financial-management-openapi.yml#GET /suppliers
+    - openapi/_original/workday-integration-financial-management-openapi.yml#GET /suppliers/{ID}

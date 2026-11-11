@@ -1,0 +1,61 @@
+provider: xero
+apis_io: https://apis.io/providers/xero/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  ledger_account:
+    path_segment:
+    - accounts
+    properties:
+      type:
+      - Type
+      - Class
+      name: Name
+      number: Code
+      currency: CurrencyCode
+      description: Description
+      status: Status
+      updated_at: UpdatedDateUTC
+      account_id: AccountID
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/xero-accounting-openapi.yml#DELETE /Accounts/{AccountID}
+    - openapi/_original/xero-accounting-openapi.yml#GET /Accounts
+    - openapi/_original/xero-accounting-openapi.yml#GET /Accounts/{AccountID}
+    - openapi/_original/xero-accounting-openapi.yml#POST /Accounts/{AccountID}
+    - openapi/_original/xero-accounting-openapi.yml#PUT /Accounts
+  journal_entry:
+    path_segment:
+    - manualjournals
+    - journals
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/xero-accounting-openapi.yml#GET /Journals
+    - openapi/_original/xero-accounting-openapi.yml#GET /Journals/{JournalID}
+    - openapi/_original/xero-accounting-openapi.yml#GET /Journals/{JournalNumber}
+    - openapi/_original/xero-accounting-openapi.yml#GET /ManualJournals
+    - openapi/_original/xero-accounting-openapi.yml#GET /ManualJournals/{ManualJournalID}
+  expense:
+    path_segment:
+    - expense
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/xero-finance-openapi.yml#GET /FinancialStatements/contacts/expense
+  tax_rate:
+    path_segment:
+    - taxrates
+    properties:
+      code: TaxType
+      rate:
+      - DisplayTaxRate
+      - EffectiveRate
+      name: Name
+      status: Status
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/xero-accounting-openapi.yml#GET /TaxRates
+    - openapi/_original/xero-accounting-openapi.yml#GET /TaxRates/{TaxType}
+    - openapi/_original/xero-accounting-openapi.yml#POST /TaxRates
+    - openapi/_original/xero-accounting-openapi.yml#PUT /TaxRates

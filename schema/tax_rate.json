@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/api-commons/accounting/main/schema/tax_rate.json",
+  "title": "Tax Rate",
+  "description": "The common tax_rate in Accounting, distilled from 18 providers' own OpenAPI. Each property records the share of them that declare it.",
+  "type": "object",
+  "properties": {
+    "code": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.722,
+      "x-commons-providers": 13,
+      "x-commons-spellings": [
+        "code",
+        "taxCode",
+        "tax_type",
+        "TaxType"
+      ]
+    },
+    "id": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.667,
+      "x-commons-providers": 12,
+      "x-commons-spellings": [
+        "id",
+        "remote_id"
+      ]
+    },
+    "rate": {
+      "type": "number",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.667,
+      "x-commons-providers": 12,
+      "x-commons-spellings": [
+        "rate",
+        "percentage",
+        "effective_rate",
+        "DisplayTaxRate",
+        "EffectiveRate"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.611,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "name",
+        "Name"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.444,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "description",
+        "memo"
+      ]
+    },
+    "status": {
+      "type": "boolean",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.444,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "archived",
+        "isActive",
+        "status",
+        "active",
+        "Status"
+      ]
+    },
+    "type": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.222,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "type"
+      ]
+    }
+  },
+  "required": [
+    "id"
+  ],
+  "x-commons": {
+    "context": "accounting",
+    "concept": "tax_rate",
+    "providers": 18,
+    "generated": "2026-11-10",
+    "version": "0.1.0-draft.20261110",
+    "status": "draft"
+  }
+}

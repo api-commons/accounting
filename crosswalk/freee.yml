@@ -1,0 +1,17 @@
+provider: freee
+apis_io: https://apis.io/providers/freee/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  journal_entry:
+    path_segment:
+    - manual_journals
+    - journals
+    properties:
+      description: details
+      date: issue_date
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/freee-openapi.yml#GET /api/1/journals
+    - openapi/_original/freee-openapi.yml#GET /api/1/manual_journals
+    - openapi/_original/freee-openapi.yml#POST /api/1/manual_journals

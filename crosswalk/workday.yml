@@ -1,0 +1,17 @@
+provider: workday
+apis_io: https://apis.io/providers/workday/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  vendor:
+    path_segment:
+    - suppliers
+    properties:
+      id: id
+      status: isActive
+      address: address
+      tax_id: taxID
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/financialManagement.yml#GET /suppliers
+    - openapi/_original/financialManagement.yml#GET /suppliers/{ID}

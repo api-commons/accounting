@@ -1,0 +1,23 @@
+provider: freshbooks
+apis_io: https://apis.io/providers/freshbooks/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  expense:
+    path_segment:
+    - expenses
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/freshbooks-openapi.yml#GET /accounting/account/{accountId}/expenses/expenses
+    - openapi/_original/freshbooks-openapi.yml#GET /accounting/account/{accountId}/expenses/expenses/{expenseId}
+    - openapi/_original/freshbooks-openapi.yml#POST /accounting/account/{accountId}/expenses/expenses
+    - openapi/_original/freshbooks-openapi.yml#PUT /accounting/account/{accountId}/expenses/expenses/{expenseId}
+  tax_rate:
+    path_segment:
+    - taxes
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/freshbooks-openapi.yml#GET /accounting/account/{accountId}/taxes/taxes
+    - openapi/_original/freshbooks-openapi.yml#POST /accounting/account/{accountId}/taxes/taxes

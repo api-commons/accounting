@@ -1,0 +1,18 @@
+provider: amcs-group
+apis_io: https://apis.io/providers/amcs-group/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  vendor:
+    path_segment:
+    - suppliers
+    properties:
+      id: GUID
+      status: status
+      description: Description
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/amcs-group-erp-openapi-original.json#GET /directory/suppliers
+    - openapi/_original/amcs-group-erp-openapi-original.json#GET /directory/suppliers/{guid}
+    - openapi/_original/amcs-group-erp-openapi-original.json#POST /directory/suppliers
+    - openapi/_original/amcs-group-erp-openapi-original.json#PUT /directory/suppliers/{guid}

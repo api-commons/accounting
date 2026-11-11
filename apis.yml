@@ -1,0 +1,60 @@
+aid: common-accounting
+name: Accounting
+type: Common
+description: 'The common Accounting vocabulary, distilled from the harvested OpenAPI of 139 providers in APIs.io:
+  shared operations, JSON Schema per concept with measured adoption, and a crosswalk from the common names to each
+  provider''s own.'
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+- Application Programming Interface
+- API
+- Accounting
+- Bookkeeping
+- ERP
+- Accounts Payable
+- Common Schema
+created: '2026-11-10'
+modified: '2026-11-10'
+url: https://raw.githubusercontent.com/api-commons/accounting/main/apis.yml
+specificationVersion: '0.20'
+apis:
+- aid: common-accounting:accounting
+  name: Common Accounting Interface
+  description: The Accounting interface the market already shares, measured.
+  humanURL: https://github.com/api-commons/accounting
+  tags:
+  - Accounting
+  - Bookkeeping
+  properties:
+  - type: OpenAPI
+    url: https://raw.githubusercontent.com/api-commons/accounting/main/openapi.yml
+  - type: Profile
+    url: https://raw.githubusercontent.com/api-commons/accounting/main/profile.yml
+  - type: Adopters
+    url: https://raw.githubusercontent.com/api-commons/accounting/main/adopters.yml
+  - type: Rules
+    url: https://raw.githubusercontent.com/api-commons/schema-commons/main/ruleset/schema-commons-naming.yaml
+  - type: JSONSchema
+    name: ledger_account
+    url: https://raw.githubusercontent.com/api-commons/accounting/main/schema/ledger_account.json
+  - type: JSONSchema
+    name: journal_entry
+    url: https://raw.githubusercontent.com/api-commons/accounting/main/schema/journal_entry.json
+  - type: JSONSchema
+    name: vendor
+    url: https://raw.githubusercontent.com/api-commons/accounting/main/schema/vendor.json
+  - type: JSONSchema
+    name: bill
+    url: https://raw.githubusercontent.com/api-commons/accounting/main/schema/bill.json
+  - type: JSONSchema
+    name: expense
+    url: https://raw.githubusercontent.com/api-commons/accounting/main/schema/expense.json
+  - type: JSONSchema
+    name: tax_rate
+    url: https://raw.githubusercontent.com/api-commons/accounting/main/schema/tax_rate.json
+common:
+- type: License
+  url: https://raw.githubusercontent.com/api-commons/accounting/main/LICENSE
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com

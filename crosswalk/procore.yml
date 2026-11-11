@@ -1,0 +1,41 @@
+provider: procore
+apis_io: https://apis.io/providers/procore/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  vendor:
+    path_segment:
+    - vendors
+    properties:
+      id:
+      - id
+      - uuid
+      name: name
+      status: is_active
+      email: email_address
+      address: address
+      description: notes
+      updated_at: updated_at
+      city: city
+      created_at: created_at
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/procore-openapi.json#GET /rest/v1.0/projects/{project_id}/punch_list/vendors
+    - openapi/_original/procore-openapi.json#GET /rest/v1.0/projects/{project_id}/vendors
+    - openapi/_original/procore-openapi.json#GET /rest/v1.0/projects/{project_id}/vendors/{id}
+    - openapi/_original/procore-openapi.json#GET /rest/v1.0/vendors
+    - openapi/_original/procore-openapi.json#GET /rest/v1.0/vendors/{id}
+  tax_rate:
+    path_segment:
+    - tax_codes
+    properties:
+      code: code
+      id: id
+      description: description
+      status: archived
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/procore-openapi.json#GET /rest/v1.0/tax_codes
+    - openapi/_original/procore-openapi.json#GET /rest/v1.0/tax_codes/{id}
+    - openapi/_original/procore-openapi.json#PATCH /rest/v1.0/tax_codes/{id}
+    - openapi/_original/procore-openapi.json#POST /rest/v1.0/tax_codes

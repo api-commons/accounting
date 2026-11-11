@@ -1,0 +1,21 @@
+provider: qargo
+apis_io: https://apis.io/providers/qargo/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  tax_rate:
+    path_segment:
+    - tax-rates
+    properties:
+      code:
+      - code
+      - tax_type
+      id: id
+      rate: percentage
+      name: name
+      description: description
+      status: archived
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/qargo-tms-openapi-original.yml#GET /v1/accounting/tax-rates
+    - openapi/_original/qargo-tms-openapi-original.yml#GET /v1/accounting/tax-rates/{id}

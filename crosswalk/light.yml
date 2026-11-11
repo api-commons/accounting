@@ -1,0 +1,50 @@
+provider: light
+apis_io: https://apis.io/providers/light/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  ledger_account:
+    path_segment:
+    - ledger-accounts
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/light-openapi-original.json#GET /v1/ledger-accounts
+  journal_entry:
+    path_segment:
+    - journal-entries
+    properties:
+      description: description
+      date: postingDate
+      lines: lines
+      currency: currency
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/light-openapi-original.json#PATCH /v1/journal-entries/{journalEntryId}
+    - openapi/_original/light-openapi-original.json#POST /v1/journal-entries
+  vendor:
+    path_segment:
+    - vendors
+    properties:
+      name: name
+      email: email
+      address: address
+      currency: currency
+      description: description
+      phone: phoneNumber
+      city: city
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/light-openapi-original.json#GET /v1/vendors
+    - openapi/_original/light-openapi-original.json#GET /v1/vendors/{vendorId}
+    - openapi/_original/light-openapi-original.json#POST /v1/vendors
+    - openapi/_original/light-openapi-original.json#PUT /v1/vendors/{vendorId}
+  expense:
+    path_segment:
+    - expenses
+    properties: {}
+    core_coverage: 0.0
+    evidence:
+    - openapi/_original/light-openapi-original.json#GET /v1/expenses
+    - openapi/_original/light-openapi-original.json#GET /v1/expenses/{expenseId}
+    - openapi/_original/light-openapi-original.json#PATCH /v1/expenses/{expenseId}

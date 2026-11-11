@@ -1,0 +1,37 @@
+provider: sage
+apis_io: https://apis.io/providers/sage/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  bill:
+    path_segment:
+    - purchase_invoices
+    properties:
+      due_date: due_date
+      id: id
+      description: reference
+      lines:
+      - $items
+      - line_items
+      status: status
+      vendor_id:
+      - contact
+      - contact_id
+      total: total_amount
+      date: date
+      tax_amount: tax_amount
+    core_coverage: 0.875
+    evidence:
+    - openapi/_original/sage-accounting-openapi.yml#GET /purchase_invoices
+    - openapi/_original/sage-accounting-openapi.yml#GET /purchase_invoices/{key}
+    - openapi/_original/sage-accounting-openapi.yml#POST /purchase_invoices
+  tax_rate:
+    path_segment:
+    - tax_rates
+    properties:
+      id: id
+      rate: percentage
+      name: name
+    core_coverage: 0.75
+    evidence:
+    - openapi/_original/sage-accounting-openapi.yml#GET /tax_rates

@@ -1,0 +1,17 @@
+provider: flowaccount
+apis_io: https://apis.io/providers/flowaccount/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  expense:
+    path_segment:
+    - expenses
+    - purchases
+    properties: {}
+    core_coverage: null
+    evidence:
+    - openapi/_original/flowaccount-openapi-original.json#DELETE /{culture}/expenses/{id}
+    - openapi/_original/flowaccount-openapi-original.json#DELETE /{culture}/purchases/{id}
+    - openapi/_original/flowaccount-openapi-original.json#GET /{culture}/expenses
+    - openapi/_original/flowaccount-openapi-original.json#GET /{culture}/expenses/{id}
+    - openapi/_original/flowaccount-openapi-original.json#GET /{culture}/purchases

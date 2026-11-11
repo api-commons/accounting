@@ -1,0 +1,27 @@
+provider: oracle-e-business-suite
+apis_io: https://apis.io/providers/oracle-e-business-suite/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  journal_entry:
+    path_segment:
+    - journals
+    properties:
+      description: description
+      lines: lines
+      currency: currencyCode
+      created_at: creationDate
+      status: status
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/financial-services-api.yml#GET /gl/journals
+    - openapi/_original/financial-services-api.yml#POST /gl/journals
+  vendor:
+    path_segment:
+    - suppliers
+    properties:
+      id: vendorId
+      created_at: creationDate
+    core_coverage: 0.333
+    evidence:
+    - openapi/_original/supply-chain-api.yml#GET /po/suppliers

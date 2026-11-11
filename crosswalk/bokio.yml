@@ -1,0 +1,44 @@
+provider: bokio
+apis_io: https://apis.io/providers/bokio/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  ledger_account:
+    path_segment:
+    - chart-of-accounts
+    properties:
+      type: accountType
+      name: name
+      balance: accountBalance
+    core_coverage: 0.375
+    evidence:
+    - openapi/_original/bokio-company-api-openapi.yml#GET /companies/{companyId}/chart-of-accounts
+    - openapi/_original/bokio-company-api-openapi.yml#GET /companies/{companyId}/chart-of-accounts/{account}
+  journal_entry:
+    path_segment:
+    - journal-entries
+    properties:
+      date: date
+      id: id
+      name: title
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/bokio-company-api-openapi.yml#GET /companies/{companyId}/journal-entries
+    - openapi/_original/bokio-company-api-openapi.yml#GET /companies/{companyId}/journal-entries/{journalEntryId}
+    - openapi/_original/bokio-company-api-openapi.yml#POST /companies/{companyId}/journal-entries
+  vendor:
+    path_segment:
+    - suppliers
+    properties:
+      id: id
+      name: name
+      address: address
+      tax_id: vatNumber
+      currency: currency
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/bokio-company-api-openapi.yml#DELETE /companies/{companyId}/suppliers/{supplierId}
+    - openapi/_original/bokio-company-api-openapi.yml#GET /companies/{companyId}/suppliers
+    - openapi/_original/bokio-company-api-openapi.yml#GET /companies/{companyId}/suppliers/{supplierId}
+    - openapi/_original/bokio-company-api-openapi.yml#POST /companies/{companyId}/suppliers
+    - openapi/_original/bokio-company-api-openapi.yml#PUT /companies/{companyId}/suppliers/{supplierId}

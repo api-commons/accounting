@@ -1,0 +1,19 @@
+provider: storecove
+apis_io: https://apis.io/providers/storecove/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  bill:
+    path_segment:
+    - purchase_invoices
+    properties:
+      due_date: due_date
+      id: guid
+      description: note
+      number: invoice_number
+      date: issue_date
+    core_coverage: 0.375
+    evidence:
+    - openapi/_original/openapi-3.0-with-deprecated.json#GET /purchase_invoices/{guid}
+    - openapi/_original/openapi.json#GET /purchase_invoices/{guid}
+    - openapi/_original/storecove-openapi.yml#GET /purchase_invoices/{guid}

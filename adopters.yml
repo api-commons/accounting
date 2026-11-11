@@ -1,0 +1,403 @@
+context: accounting
+generated: '2026-11-10'
+adopters:
+- provider: amcs-group
+  apis_io: https://apis.io/providers/amcs-group/
+  crosswalk: crosswalk/amcs-group.yml
+  concepts:
+  - vendor
+- provider: appzen
+  apis_io: https://apis.io/providers/appzen/
+  crosswalk: crosswalk/appzen.yml
+  concepts:
+  - vendor
+- provider: avalara
+  apis_io: https://apis.io/providers/avalara/
+  crosswalk: crosswalk/avalara.yml
+  concepts:
+  - tax_rate
+- provider: basware
+  apis_io: https://apis.io/providers/basware/
+  crosswalk: crosswalk/basware.yml
+  concepts:
+  - tax_rate
+  - vendor
+- provider: bill
+  apis_io: https://apis.io/providers/bill/
+  crosswalk: crosswalk/bill.yml
+  concepts:
+  - bill
+  - vendor
+- provider: bokio
+  apis_io: https://apis.io/providers/bokio/
+  crosswalk: crosswalk/bokio.yml
+  concepts:
+  - journal_entry
+  - ledger_account
+  - vendor
+- provider: broadlume
+  apis_io: https://apis.io/providers/broadlume/
+  crosswalk: crosswalk/broadlume.yml
+  concepts:
+  - vendor
+- provider: campfire
+  apis_io: https://apis.io/providers/campfire/
+  crosswalk: crosswalk/campfire.yml
+  concepts:
+  - bill
+  - journal_entry
+  - ledger_account
+  - vendor
+- provider: campfire-hq
+  apis_io: https://apis.io/providers/campfire-hq/
+  crosswalk: crosswalk/campfire-hq.yml
+  concepts:
+  - bill
+  - vendor
+- provider: canix
+  apis_io: https://apis.io/providers/canix/
+  crosswalk: crosswalk/canix.yml
+  concepts:
+  - vendor
+- provider: codat
+  apis_io: https://apis.io/providers/codat/
+  crosswalk: crosswalk/codat.yml
+  concepts:
+  - bill
+  - journal_entry
+  - ledger_account
+  - vendor
+- provider: concur
+  apis_io: https://apis.io/providers/concur/
+  crosswalk: crosswalk/concur.yml
+  concepts:
+  - expense
+- provider: coupa
+  apis_io: https://apis.io/providers/coupa/
+  crosswalk: crosswalk/coupa.yml
+  concepts:
+  - vendor
+- provider: digits-com
+  apis_io: https://apis.io/providers/digits-com/
+  crosswalk: crosswalk/digits-com.yml
+  concepts:
+  - journal_entry
+- provider: doorloop
+  apis_io: https://apis.io/providers/doorloop/
+  crosswalk: crosswalk/doorloop.yml
+  concepts:
+  - bill
+  - expense
+  - vendor
+- provider: eci-solutions
+  apis_io: https://apis.io/providers/eci-solutions/
+  crosswalk: crosswalk/eci-solutions.yml
+  concepts:
+  - bill
+  - expense
+  - tax_rate
+  - vendor
+- provider: emburse
+  apis_io: https://apis.io/providers/emburse/
+  crosswalk: crosswalk/emburse.yml
+  concepts:
+  - expense
+- provider: float-financial
+  apis_io: https://apis.io/providers/float-financial/
+  crosswalk: crosswalk/float-financial.yml
+  concepts:
+  - bill
+  - tax_rate
+  - vendor
+- provider: flowaccount
+  apis_io: https://apis.io/providers/flowaccount/
+  crosswalk: crosswalk/flowaccount.yml
+  concepts:
+  - expense
+- provider: fortnox
+  apis_io: https://apis.io/providers/fortnox/
+  crosswalk: crosswalk/fortnox.yml
+  concepts:
+  - vendor
+- provider: freee
+  apis_io: https://apis.io/providers/freee/
+  crosswalk: crosswalk/freee.yml
+  concepts:
+  - journal_entry
+- provider: freshbooks
+  apis_io: https://apis.io/providers/freshbooks/
+  crosswalk: crosswalk/freshbooks.yml
+  concepts:
+  - expense
+  - tax_rate
+- provider: fulcrumpro
+  apis_io: https://apis.io/providers/fulcrumpro/
+  crosswalk: crosswalk/fulcrumpro.yml
+  concepts:
+  - tax_rate
+  - vendor
+- provider: fyle
+  apis_io: https://apis.io/providers/fyle/
+  crosswalk: crosswalk/fyle.yml
+  concepts:
+  - expense
+- provider: karbonhq
+  apis_io: https://apis.io/providers/karbonhq/
+  crosswalk: crosswalk/karbonhq.yml
+  concepts:
+  - expense
+- provider: katana
+  apis_io: https://apis.io/providers/katana/
+  crosswalk: crosswalk/katana.yml
+  concepts:
+  - tax_rate
+  - vendor
+- provider: leanlaw
+  apis_io: https://apis.io/providers/leanlaw/
+  crosswalk: crosswalk/leanlaw.yml
+  concepts:
+  - expense
+- provider: light
+  apis_io: https://apis.io/providers/light/
+  crosswalk: crosswalk/light.yml
+  concepts:
+  - expense
+  - journal_entry
+  - ledger_account
+  - vendor
+- provider: maesn
+  apis_io: https://apis.io/providers/maesn/
+  crosswalk: crosswalk/maesn.yml
+  concepts:
+  - bill
+  - expense
+  - journal_entry
+  - ledger_account
+  - tax_rate
+  - vendor
+- provider: marginedge
+  apis_io: https://apis.io/providers/marginedge/
+  crosswalk: crosswalk/marginedge.yml
+  concepts:
+  - vendor
+- provider: mercoa
+  apis_io: https://apis.io/providers/mercoa/
+  crosswalk: crosswalk/mercoa.yml
+  concepts:
+  - vendor
+- provider: merge
+  apis_io: https://apis.io/providers/merge/
+  crosswalk: crosswalk/merge.yml
+  concepts:
+  - expense
+  - journal_entry
+  - ledger_account
+  - tax_rate
+  - vendor
+- provider: microsoft-dynamics-365
+  apis_io: https://apis.io/providers/microsoft-dynamics-365/
+  crosswalk: crosswalk/microsoft-dynamics-365.yml
+  concepts:
+  - journal_entry
+  - ledger_account
+  - vendor
+- provider: microsoft-dynamics-365-business-central
+  apis_io: https://apis.io/providers/microsoft-dynamics-365-business-central/
+  crosswalk: crosswalk/microsoft-dynamics-365-business-central.yml
+  concepts:
+  - vendor
+- provider: monite
+  apis_io: https://apis.io/providers/monite/
+  crosswalk: crosswalk/monite.yml
+  concepts:
+  - bill
+- provider: opengov
+  apis_io: https://apis.io/providers/opengov/
+  crosswalk: crosswalk/opengov.yml
+  concepts:
+  - vendor
+- provider: oracle-e-business-suite
+  apis_io: https://apis.io/providers/oracle-e-business-suite/
+  crosswalk: crosswalk/oracle-e-business-suite.yml
+  concepts:
+  - journal_entry
+  - vendor
+- provider: oracle-fusion
+  apis_io: https://apis.io/providers/oracle-fusion/
+  crosswalk: crosswalk/oracle-fusion.yml
+  concepts:
+  - vendor
+- provider: ottimate
+  apis_io: https://apis.io/providers/ottimate/
+  crosswalk: crosswalk/ottimate.yml
+  concepts:
+  - vendor
+- provider: para-t
+  apis_io: https://apis.io/providers/para-t/
+  crosswalk: crosswalk/para-t.yml
+  concepts:
+  - tax_rate
+- provider: pennylane
+  apis_io: https://apis.io/providers/pennylane/
+  crosswalk: crosswalk/pennylane.yml
+  concepts:
+  - bill
+  - journal_entry
+  - ledger_account
+  - vendor
+- provider: peoplesoft
+  apis_io: https://apis.io/providers/peoplesoft/
+  crosswalk: crosswalk/peoplesoft.yml
+  concepts:
+  - journal_entry
+- provider: pleo
+  apis_io: https://apis.io/providers/pleo/
+  crosswalk: crosswalk/pleo.yml
+  concepts:
+  - tax_rate
+  - vendor
+- provider: procore
+  apis_io: https://apis.io/providers/procore/
+  crosswalk: crosswalk/procore.yml
+  concepts:
+  - tax_rate
+  - vendor
+- provider: procurify
+  apis_io: https://apis.io/providers/procurify/
+  crosswalk: crosswalk/procurify.yml
+  concepts:
+  - bill
+  - vendor
+- provider: puzzle
+  apis_io: https://apis.io/providers/puzzle/
+  crosswalk: crosswalk/puzzle.yml
+  concepts:
+  - bill
+  - expense
+  - journal_entry
+  - ledger_account
+  - vendor
+- provider: qargo
+  apis_io: https://apis.io/providers/qargo/
+  crosswalk: crosswalk/qargo.yml
+  concepts:
+  - tax_rate
+- provider: ramp
+  apis_io: https://apis.io/providers/ramp/
+  crosswalk: crosswalk/ramp.yml
+  concepts:
+  - bill
+  - vendor
+- provider: restaurant365
+  apis_io: https://apis.io/providers/restaurant365/
+  crosswalk: crosswalk/restaurant365.yml
+  concepts:
+  - journal_entry
+- provider: rillet
+  apis_io: https://apis.io/providers/rillet/
+  crosswalk: crosswalk/rillet.yml
+  concepts:
+  - bill
+  - journal_entry
+  - ledger_account
+  - tax_rate
+  - vendor
+- provider: routable
+  apis_io: https://apis.io/providers/routable/
+  crosswalk: crosswalk/routable.yml
+  concepts:
+  - bill
+- provider: sage
+  apis_io: https://apis.io/providers/sage/
+  crosswalk: crosswalk/sage.yml
+  concepts:
+  - bill
+  - tax_rate
+- provider: sap
+  apis_io: https://apis.io/providers/sap/
+  crosswalk: crosswalk/sap.yml
+  concepts:
+  - journal_entry
+- provider: servicetitan
+  apis_io: https://apis.io/providers/servicetitan/
+  crosswalk: crosswalk/servicetitan.yml
+  concepts:
+  - journal_entry
+  - ledger_account
+  - vendor
+- provider: storecove
+  apis_io: https://apis.io/providers/storecove/
+  crosswalk: crosswalk/storecove.yml
+  concepts:
+  - bill
+- provider: tinvio-com
+  apis_io: https://apis.io/providers/tinvio-com/
+  crosswalk: crosswalk/tinvio-com.yml
+  concepts:
+  - bill
+  - journal_entry
+  - ledger_account
+- provider: tradeshift
+  apis_io: https://apis.io/providers/tradeshift/
+  crosswalk: crosswalk/tradeshift.yml
+  concepts:
+  - tax_rate
+- provider: vicai
+  apis_io: https://apis.io/providers/vicai/
+  crosswalk: crosswalk/vicai.yml
+  concepts:
+  - bill
+  - tax_rate
+  - vendor
+- provider: visma
+  apis_io: https://apis.io/providers/visma/
+  crosswalk: crosswalk/visma.yml
+  concepts:
+  - vendor
+- provider: weel
+  apis_io: https://apis.io/providers/weel/
+  crosswalk: crosswalk/weel.yml
+  concepts:
+  - tax_rate
+- provider: workday
+  apis_io: https://apis.io/providers/workday/
+  crosswalk: crosswalk/workday.yml
+  concepts:
+  - vendor
+- provider: workday-finance
+  apis_io: https://apis.io/providers/workday-finance/
+  crosswalk: crosswalk/workday-finance.yml
+  concepts:
+  - journal_entry
+  - ledger_account
+  - vendor
+- provider: workday-financials
+  apis_io: https://apis.io/providers/workday-financials/
+  crosswalk: crosswalk/workday-financials.yml
+  concepts:
+  - journal_entry
+  - vendor
+- provider: workday-integration
+  apis_io: https://apis.io/providers/workday-integration/
+  crosswalk: crosswalk/workday-integration.yml
+  concepts:
+  - vendor
+- provider: xentral
+  apis_io: https://apis.io/providers/xentral/
+  crosswalk: crosswalk/xentral.yml
+  concepts:
+  - tax_rate
+  - vendor
+- provider: xero
+  apis_io: https://apis.io/providers/xero/
+  crosswalk: crosswalk/xero.yml
+  concepts:
+  - expense
+  - journal_entry
+  - ledger_account
+  - tax_rate
+- provider: zenledger
+  apis_io: https://apis.io/providers/zenledger/
+  crosswalk: crosswalk/zenledger.yml
+  concepts:
+  - tax_rate

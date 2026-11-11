@@ -1,0 +1,27 @@
+provider: canix
+apis_io: https://apis.io/providers/canix/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  vendor:
+    path_segment:
+    - vendors
+    properties:
+      id: id
+      name: name
+      status:
+      - is_active
+      - state
+      email: email
+      address: address
+      description: notes
+      phone: phone
+      updated_at: updated_at
+      city: city
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/canix-openapi.yml#DELETE /vendors/{vendor_id}
+    - openapi/_original/canix-openapi.yml#GET /vendors
+    - openapi/_original/canix-openapi.yml#GET /vendors/{vendor_id}
+    - openapi/_original/canix-openapi.yml#POST /vendors
+    - openapi/_original/canix-openapi.yml#PUT /vendors/{vendor_id}

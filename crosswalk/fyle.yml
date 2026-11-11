@@ -1,0 +1,21 @@
+provider: fyle
+apis_io: https://apis.io/providers/fyle/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  expense:
+    path_segment:
+    - expenses
+    properties:
+      id: id
+      amount: amount
+      created_at: created_at
+      currency: currency
+      updated_at: updated_at
+      vendor_id: merchant
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/fyle-openapi.yml#GET /admin/expenses
+    - openapi/_original/fyle-openapi.yml#GET /spender/expenses
+    - openapi/_original/fyle-openapi.yml#POST /admin/expenses
+    - openapi/_original/fyle-openapi.yml#POST /spender/expenses

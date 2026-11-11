@@ -1,0 +1,20 @@
+provider: concur
+apis_io: https://apis.io/providers/concur/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  expense:
+    path_segment:
+    - expenses
+    properties:
+      id: expenseId
+      date: transactionDate
+      exchange_rate: exchangeRate
+      payment_method: paymentType
+      vendor_id: vendor
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/sap-concur-expenses-api-openapi.yml#DELETE /expensereports/v4/reports/{reportId}/expenses/{expenseId}
+    - openapi/_original/sap-concur-expenses-api-openapi.yml#GET /expensereports/v4/users/{userID}/context/{contextType}/reports/{reportId}/expenses
+    - openapi/_original/sap-concur-expenses-api-openapi.yml#GET /expensereports/v4/users/{userID}/context/{contextType}/reports/{reportId}/expenses/{expenseId}
+    - openapi/_original/sap-concur-expenses-api-openapi.yml#PATCH /expensereports/v4/reports/{reportId}/expenses/{expenseId}

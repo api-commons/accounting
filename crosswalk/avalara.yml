@@ -1,0 +1,21 @@
+provider: avalara
+apis_io: https://apis.io/providers/avalara/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  tax_rate:
+    path_segment:
+    - taxcodes
+    - tax-rates
+    properties:
+      code: taxCode
+      id: id
+      description: description
+      status: isActive
+    core_coverage: 0.5
+    evidence:
+    - openapi/_original/avalara-avatax-rest-openapi.yml#GET /api/v2/definitions/taxcodes
+    - openapi/_original/avalara-mylodgetax-openapi.yml#GET /tax-rates
+    - openapi/_original/avatax-apis-openapi.yml#DELETE /api/v2/companies/{companyId}/taxcodes/{id}
+    - openapi/_original/avatax-apis-openapi.yml#GET /api/v2/companies/{companyId}/taxcodes
+    - openapi/_original/avatax-apis-openapi.yml#GET /api/v2/companies/{companyId}/taxcodes/{id}

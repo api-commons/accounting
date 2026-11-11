@@ -1,0 +1,47 @@
+provider: servicetitan
+apis_io: https://apis.io/providers/servicetitan/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  ledger_account:
+    path_segment:
+    - gl-accounts
+    properties:
+      type: accountType
+      name: name
+      number: number
+      id: id
+      status: active
+    core_coverage: 0.625
+    evidence:
+    - openapi/_original/servicetitan-accounting-api-openapi.yml#GET /gl-accounts
+  journal_entry:
+    path_segment:
+    - journal-entries
+    properties:
+      description:
+      - memo
+      - details
+      date: date
+      id: id
+      status:
+      - active
+      - status
+      number: number
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/servicetitan-accounting-api-openapi.yml#GET /journal-entries
+  vendor:
+    path_segment:
+    - vendors
+    properties:
+      id: id
+      name: name
+      status: active
+      email: email
+      address: address
+      description: memo
+      phone: phone
+    core_coverage: 1.0
+    evidence:
+    - openapi/_original/servicetitan-inventory-api-openapi.yml#GET /vendors

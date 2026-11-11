@@ -1,0 +1,16 @@
+provider: appzen
+apis_io: https://apis.io/providers/appzen/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  vendor:
+    path_segment:
+    - supplier
+    properties:
+      id: uuid
+      status: status
+      address: addresses
+    core_coverage: 0.667
+    evidence:
+    - openapi/_original/appzen-autonomous-ap-openapi-original.yml#GET /supplier/{uuid}
+    - openapi/_original/appzen-autonomous-ap-openapi-original.yml#POST /supplier

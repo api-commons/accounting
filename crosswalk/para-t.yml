@@ -1,0 +1,18 @@
+provider: para-t
+apis_io: https://apis.io/providers/para-t/
+context: accounting
+generated: '2026-11-10'
+concepts:
+  tax_rate:
+    path_segment:
+    - taxes
+    properties:
+      id: id
+      type: type
+    core_coverage: 0.25
+    evidence:
+    - openapi/_original/para-t-openapi-original.yml#DELETE /{company_id}/taxes/{id}
+    - openapi/_original/para-t-openapi-original.yml#GET /{company_id}/taxes
+    - openapi/_original/para-t-openapi-original.yml#GET /{company_id}/taxes/{id}
+    - openapi/_original/para-t-openapi-original.yml#POST /{company_id}/taxes
+    - openapi/_original/para-t-openapi-original.yml#PUT /{company_id}/taxes/{id}
