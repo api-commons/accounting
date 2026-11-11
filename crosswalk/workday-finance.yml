@@ -1,7 +1,7 @@
 provider: workday-finance
 apis_io: https://apis.io/providers/workday-finance/
 context: accounting
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   ledger_account:
     path_segment:

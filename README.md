@@ -19,7 +19,7 @@ generated. Every number below is a count of providers.
 | expense | 14 | 12 | id 50% | expenses 12, expense-reports 2, purchases 1, expense 1 |
 | tax_rate | 21 | 18 | code 72%, rate 72%, id 67%, name 61% | tax-rates 6, taxes 5, taxcodes 4, tax-codes 3 |
 
-Cohort: 139 providers with harvested OpenAPI, 67 crosswalks. Of the providers exposing a ledger_account: 57% create, 100% list, 64% fetch, 29% update, 21% delete. Generated 2026-11-10 by build.py.
+Cohort: 139 providers with harvested OpenAPI, 67 crosswalks. Of the providers exposing a ledger_account: 57% create, 100% list, 64% fetch, 29% update, 21% delete. Generated 2026-11-11 by build.py.
 <!-- /commons:summary -->
 
 Shares are of the providers with a readable resource schema for that concept. The

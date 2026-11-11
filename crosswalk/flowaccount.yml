@@ -1,7 +1,7 @@
 provider: flowaccount
 apis_io: https://apis.io/providers/flowaccount/
 context: accounting
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   expense:
     path_segment:

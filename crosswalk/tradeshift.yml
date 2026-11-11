@@ -1,7 +1,7 @@
 provider: tradeshift
 apis_io: https://apis.io/providers/tradeshift/
 context: accounting
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   tax_rate:
     path_segment:

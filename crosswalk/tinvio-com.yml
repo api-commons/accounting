@@ -1,7 +1,7 @@
 provider: tinvio-com
 apis_io: https://apis.io/providers/tinvio-com/
 context: accounting
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   ledger_account:
     path_segment:

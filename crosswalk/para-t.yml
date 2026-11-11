@@ -1,7 +1,7 @@
 provider: para-t
 apis_io: https://apis.io/providers/para-t/
 context: accounting
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   tax_rate:
     path_segment:

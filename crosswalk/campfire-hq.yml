@@ -1,7 +1,7 @@
 provider: campfire-hq
 apis_io: https://apis.io/providers/campfire-hq/
 context: accounting
-generated: '2026-11-10'
+generated: '2026-11-11'
 concepts:
   vendor:
     path_segment:
