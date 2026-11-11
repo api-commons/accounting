@@ -25,7 +25,6 @@ concepts:
       currency: currency
       exchange_rate: exchange_rate
       name: name
-      updated_at: updated_at
     core_coverage: 0.667
     evidence:
     - openapi/_original/rillet-accounting-api-openapi.json#DELETE /journal-entries/{journal_entry_id}
@@ -40,8 +39,8 @@ concepts:
       id: id
       name: name
       email: email
-      address: address
       tax_id: tax_id
+      address: address
       updated_at: updated_at
     core_coverage: 0.667
     evidence:
@@ -74,12 +73,13 @@ concepts:
     - tax-rates
     properties:
       code: code
-      id: id
       rate: percentage
+      id: id
       description:
       - memo
       - description
       status: status
+      type: type
     core_coverage: 0.75
     evidence:
     - openapi/_original/rillet-accounting-api-openapi.json#GET /tax-rates

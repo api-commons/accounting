@@ -6,10 +6,8 @@ concepts:
   journal_entry:
     path_segment:
     - journalentries
-    properties:
-      description: Memo
-      lines: JournalEntryLines
-    core_coverage: 0.333
+    properties: {}
+    core_coverage: 0.0
     evidence:
     - openapi/_original/sap-business-one-service-layer-openapi.yml#GET /JournalEntries
     - openapi/_original/sap-business-one-service-layer-openapi.yml#POST /JournalEntries

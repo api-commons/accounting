@@ -32,8 +32,8 @@ concepts:
     properties:
       id: id
       name: name
-      address: address
       tax_id: vatNumber
+      address: address
       currency: currency
     core_coverage: 0.667
     evidence:

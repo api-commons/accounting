@@ -7,13 +7,14 @@ concepts:
     path_segment:
     - vendors
     properties:
+      id: id
       status: state
       email: email
       phone: phone
-      updated_at: updated
       city: city
+      updated_at: updated
       created_at: created
-    core_coverage: 0.333
+    core_coverage: 0.667
     evidence:
     - openapi/_original/plateiq-openapi.json#GET /vendors
     - openapi/_original/plateiq-openapi.json#GET /vendors/{id}

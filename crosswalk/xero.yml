@@ -15,8 +15,8 @@ concepts:
       currency: CurrencyCode
       description: Description
       status: Status
-      updated_at: UpdatedDateUTC
       account_id: AccountID
+      updated_at: UpdatedDateUTC
     core_coverage: 0.75
     evidence:
     - openapi/_original/xero-accounting-openapi.yml#DELETE /Accounts/{AccountID}

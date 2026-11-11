@@ -20,9 +20,10 @@ concepts:
     path_segment:
     - journalentries
     properties:
-      description: memo
       date: postingDate
+      description: memo
       id: id
+      currency: currency
       lines: lines
       created_at: createdOn
       status: status

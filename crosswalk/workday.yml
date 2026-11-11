@@ -9,8 +9,8 @@ concepts:
     properties:
       id: id
       status: isActive
-      address: address
       tax_id: taxID
+      address: address
     core_coverage: 0.667
     evidence:
     - openapi/_original/financialManagement.yml#GET /suppliers

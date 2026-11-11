@@ -10,8 +10,8 @@ concepts:
       id: vendorId
       status: status
       email: email
-      address: addresses
       tax_id: taxId
+      address: addresses
       phone: phoneNumber
       updated_at: updatedAt
       created_at: createdAt

@@ -51,8 +51,8 @@ concepts:
     - taxcodes
     properties:
       code: code
-      id: id
       rate: rate
+      id: id
       description: description
     core_coverage: 0.75
     evidence:

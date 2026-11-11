@@ -9,8 +9,8 @@ concepts:
     properties:
       name: name
       email: email
-      address: address
       tax_id: taxId
+      address: address
       currency: currency
       phone: phone
     core_coverage: 0.333

@@ -8,8 +8,8 @@ concepts:
     - manual_journals
     - journals
     properties:
-      description: details
       date: issue_date
+      description: details
     core_coverage: 0.667
     evidence:
     - openapi/_original/freee-openapi.yml#GET /api/1/journals

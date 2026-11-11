@@ -8,8 +8,8 @@
     "id": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.744,
-      "x-commons-providers": 29,
+      "x-commons-share": 0.795,
+      "x-commons-providers": 31,
       "x-commons-spellings": [
         "id",
         "vendorId",
@@ -35,8 +35,8 @@
     "status": {
       "type": "string",
       "x-commons-tier": "core",
-      "x-commons-share": 0.615,
-      "x-commons-providers": 24,
+      "x-commons-share": 0.641,
+      "x-commons-providers": 25,
       "x-commons-spellings": [
         "status",
         "state",
@@ -63,16 +63,6 @@
       ],
       "format": "email"
     },
-    "address": {
-      "type": "object",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.41,
-      "x-commons-providers": 16,
-      "x-commons-spellings": [
-        "address",
-        "addresses"
-      ]
-    },
     "tax_id": {
       "type": "string",
       "x-commons-tier": "extended",
@@ -87,6 +77,16 @@
         "taxNumber",
         "tax-id",
         "taxIdentifier"
+      ]
+    },
+    "address": {
+      "type": "object",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.385,
+      "x-commons-providers": 15,
+      "x-commons-spellings": [
+        "address",
+        "addresses"
       ]
     },
     "currency": {
@@ -128,6 +128,16 @@
         "phones"
       ]
     },
+    "city": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.282,
+      "x-commons-providers": 11,
+      "x-commons-spellings": [
+        "city",
+        "City"
+      ]
+    },
     "updated_at": {
       "type": "string",
       "x-commons-tier": "extended",
@@ -143,16 +153,6 @@
       ],
       "format": "date-time"
     },
-    "city": {
-      "type": "string",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.256,
-      "x-commons-providers": 10,
-      "x-commons-spellings": [
-        "city",
-        "City"
-      ]
-    },
     "created_at": {
       "type": "string",
       "x-commons-tier": "extended",
@@ -167,6 +167,16 @@
         "created"
       ],
       "format": "date-time"
+    },
+    "country": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.205,
+      "x-commons-providers": 8,
+      "x-commons-spellings": [
+        "country",
+        "Country"
+      ]
     }
   },
   "required": [

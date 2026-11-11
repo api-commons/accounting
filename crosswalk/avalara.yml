@@ -9,10 +9,11 @@ concepts:
     - tax-rates
     properties:
       code: taxCode
+      rate: rate
       id: id
       description: description
       status: isActive
-    core_coverage: 0.5
+    core_coverage: 0.75
     evidence:
     - openapi/_original/avalara-avatax-rest-openapi.yml#GET /api/v2/definitions/taxcodes
     - openapi/_original/avalara-mylodgetax-openapi.yml#GET /tax-rates

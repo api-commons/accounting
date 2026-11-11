@@ -10,8 +10,8 @@ concepts:
       code:
       - code
       - tax_type
-      id: id
       rate: percentage
+      id: id
       name: name
       description: description
       status: archived

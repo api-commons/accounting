@@ -20,7 +20,10 @@ concepts:
       currency: currency
       description: description
       status: status
-      balance: currentBalance
+      balance:
+      - balance
+      - currentBalance
+      account_id: accountId
     core_coverage: 1.0
     evidence:
     - openapi/_original/codat-lending-openapi.json#GET /companies/{companyId}/connections/{connectionId}/options/chartOfAccounts
@@ -55,8 +58,8 @@ concepts:
       name: displayName
       status: status
       email: emailAddress
-      address: addresses
       tax_id: taxNumber
+      address: addresses
       description: description
       phone: phone
     core_coverage: 1.0

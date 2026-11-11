@@ -9,14 +9,12 @@ concepts:
     properties:
       due_date: due_date
       id: id
-      description: reference
-      lines:
-      - $items
-      - line_items
+      description:
+      - reference
+      - description
+      lines: line_items
       status: status
-      vendor_id:
-      - contact
-      - contact_id
+      vendor_id: contact
       total: total_amount
       date: date
       tax_amount: tax_amount
@@ -29,8 +27,8 @@ concepts:
     path_segment:
     - tax_rates
     properties:
-      id: id
       rate: percentage
+      id: id
       name: name
     core_coverage: 0.75
     evidence:

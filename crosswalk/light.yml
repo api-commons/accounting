@@ -14,10 +14,10 @@ concepts:
     path_segment:
     - journal-entries
     properties:
-      description: description
       date: postingDate
-      lines: lines
+      description: description
       currency: currency
+      lines: lines
     core_coverage: 0.667
     evidence:
     - openapi/_original/light-openapi-original.json#PATCH /v1/journal-entries/{journalEntryId}
@@ -33,6 +33,7 @@ concepts:
       description: description
       phone: phoneNumber
       city: city
+      country: country
     core_coverage: 0.333
     evidence:
     - openapi/_original/light-openapi-original.json#GET /v1/vendors

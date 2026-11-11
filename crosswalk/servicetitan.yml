@@ -19,10 +19,10 @@ concepts:
     path_segment:
     - journal-entries
     properties:
+      date: date
       description:
       - memo
       - details
-      date: date
       id: id
       status:
       - active

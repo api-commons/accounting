@@ -34,8 +34,8 @@ concepts:
     path_segment:
     - tax-codes
     properties:
+      rate: rate
       id: id
-      rate: effective_rate
       name: name
     core_coverage: 0.75
     evidence:

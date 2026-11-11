@@ -5,20 +5,6 @@
   "description": "The common journal_entry in Accounting, distilled from 19 providers' own OpenAPI. Each property records the share of them that declare it.",
   "type": "object",
   "properties": {
-    "description": {
-      "type": "string",
-      "x-commons-tier": "core",
-      "x-commons-share": 0.737,
-      "x-commons-providers": 14,
-      "x-commons-spellings": [
-        "description",
-        "memo",
-        "details",
-        "description ",
-        "Memo",
-        "reference"
-      ]
-    },
     "date": {
       "type": "string",
       "x-commons-tier": "core",
@@ -34,6 +20,19 @@
         "journalDate"
       ]
     },
+    "description": {
+      "type": "string",
+      "x-commons-tier": "core",
+      "x-commons-share": 0.684,
+      "x-commons-providers": 13,
+      "x-commons-spellings": [
+        "description",
+        "memo",
+        "details",
+        "description ",
+        "reference"
+      ]
+    },
     "id": {
       "type": "string",
       "x-commons-tier": "core",
@@ -44,26 +43,25 @@
         "remote_id"
       ]
     },
-    "lines": {
-      "type": "array",
+    "currency": {
+      "type": "string",
       "x-commons-tier": "extended",
       "x-commons-share": 0.474,
       "x-commons-providers": 9,
       "x-commons-spellings": [
-        "lines",
-        "journalLines",
-        "entries",
-        "JournalEntryLines"
+        "currency",
+        "currencyCode"
       ]
     },
-    "currency": {
-      "type": "string",
+    "lines": {
+      "type": "array",
       "x-commons-tier": "extended",
       "x-commons-share": 0.421,
       "x-commons-providers": 8,
       "x-commons-spellings": [
-        "currency",
-        "currencyCode"
+        "lines",
+        "journalLines",
+        "entries"
       ]
     },
     "created_at": {
@@ -132,19 +130,6 @@
         "type",
         "type "
       ]
-    },
-    "updated_at": {
-      "type": "string",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.211,
-      "x-commons-providers": 4,
-      "x-commons-spellings": [
-        "updatedDate",
-        "modified_at",
-        "updated_at",
-        "updated"
-      ],
-      "format": "date-time"
     }
   },
   "required": [

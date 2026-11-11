@@ -13,11 +13,11 @@ generated. Every number below is a count of providers.
 | Concept | Expose it | Readable schema | Core properties (share) | Collection named |
 | --- | ---: | ---: | --- | --- |
 | ledger_account | 14 | 12 | type 100%, name 92%, number 92%, id 75%, currency 67%, description 67%, status 67%, balance 58% | accounts 9, chart-of-accounts 2, chartofaccounts 2, account 1 |
-| journal_entry | 21 | 19 | description 74%, date 68%, id 63% | journals 9, journalentries 7, journal-entries 6, journal_entry 1 |
-| vendor | 43 | 39 | id 74%, name 69%, status 62% | vendors 23, suppliers 17, vendor 3, supplier 2 |
+| journal_entry | 21 | 19 | date 68%, description 68%, id 63% | journals 9, journalentries 7, journal-entries 6, journal_entry 1 |
+| vendor | 43 | 39 | id 80%, name 69%, status 64% | vendors 23, suppliers 17, vendor 3, supplier 2 |
 | bill | 19 | 17 | due_date 94%, id 88%, description 76%, lines 76%, status 76%, vendor_id 71%, total 65%, currency 59% | bills 11, bill 3, payables 2, purchase_invoices 2 |
 | expense | 14 | 12 | id 50% | expenses 12, expense-reports 2, purchases 1, expense 1 |
-| tax_rate | 21 | 18 | code 72%, id 67%, rate 67%, name 61% | tax-rates 6, taxes 5, taxcodes 4, tax-codes 3 |
+| tax_rate | 21 | 18 | code 72%, rate 72%, id 67%, name 61% | tax-rates 6, taxes 5, taxcodes 4, tax-codes 3 |
 
 Cohort: 139 providers with harvested OpenAPI, 67 crosswalks. Of the providers exposing a ledger_account: 57% create, 100% list, 64% fetch, 29% update, 21% delete. Generated 2026-11-10 by build.py.
 <!-- /commons:summary -->

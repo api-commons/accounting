@@ -6,7 +6,8 @@ concepts:
   vendor:
     path_segment:
     - vendors
-    properties: {}
-    core_coverage: 0.0
+    properties:
+      id: vendorId
+    core_coverage: 0.333
     evidence:
     - openapi/_original/marginedge-openapi.yml#GET /vendors

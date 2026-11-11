@@ -49,8 +49,7 @@
         "lines",
         "lineItems",
         "items",
-        "line_items",
-        "$items"
+        "line_items"
       ]
     },
     "status": {
@@ -76,8 +75,7 @@
         "supplier",
         "contactId",
         "vendor_ref",
-        "contact",
-        "contact_id"
+        "contact"
       ]
     },
     "total": {
@@ -139,19 +137,6 @@
       ],
       "format": "date-time"
     },
-    "updated_at": {
-      "type": "string",
-      "x-commons-tier": "extended",
-      "x-commons-share": 0.294,
-      "x-commons-providers": 5,
-      "x-commons-spellings": [
-        "updated_at",
-        "updatedDate",
-        "updatedAt",
-        "updated"
-      ],
-      "format": "date-time"
-    },
     "amount_due": {
       "type": "number",
       "x-commons-tier": "extended",
@@ -181,6 +166,18 @@
         "tax_amount",
         "taxAmount"
       ]
+    },
+    "updated_at": {
+      "type": "string",
+      "x-commons-tier": "extended",
+      "x-commons-share": 0.235,
+      "x-commons-providers": 4,
+      "x-commons-spellings": [
+        "updated_at",
+        "updatedDate",
+        "updatedAt"
+      ],
+      "format": "date-time"
     }
   },
   "required": [

@@ -33,18 +33,17 @@ concepts:
     - journalentries
     - journals
     properties:
+      date: transactionDate
       description:
       - 'description '
       - description
-      date: transactionDate
       id: id
-      lines: entries
       currency: currency
+      lines: entries
       created_at: createdDate
       exchange_rate: exchangeRate
       number: 'number '
       type: 'type '
-      updated_at: updatedDate
     core_coverage: 1.0
     evidence:
     - openapi/_original/maesn-openapi.json#DELETE /accounting/journalEntries/{journalEntryId}
@@ -79,8 +78,8 @@ concepts:
       currency: currency
       number: billNumber
       created_at: createdDate
-      updated_at: updatedDate
       bill_date: billDate
+      updated_at: updatedDate
     core_coverage: 0.875
     evidence:
     - openapi/_original/maesn-openapi.json#DELETE /accounting/bills/{billId}
@@ -113,8 +112,8 @@ concepts:
     - taxrates
     properties:
       code: code
-      id: id
       rate: percentage
+      id: id
       name: name
       description: description
       type: type

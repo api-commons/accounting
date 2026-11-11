@@ -8,8 +8,8 @@ concepts:
     - journals
     properties:
       description: description
-      lines: lines
       currency: currencyCode
+      lines: lines
       created_at: creationDate
       status: status
     core_coverage: 0.333

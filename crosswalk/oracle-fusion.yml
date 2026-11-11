@@ -12,6 +12,7 @@ concepts:
       - State
       city: City
       created_at: CreationDate
+      country: Country
     core_coverage: 0.333
     evidence:
     - openapi/_original/oracle-fusion-scm-openapi.yml#GET /fscmRestApi/resources/11.13.18.05/suppliers

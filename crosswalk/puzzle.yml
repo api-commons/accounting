@@ -32,10 +32,10 @@ concepts:
     - journalentries
     - journal-entries
     properties:
-      description: memo
-      date:
-      - postingDate
-      - date
+      date: postingDate
+      description:
+      - description
+      - memo
       id: id
       lines: lines
       status: status

@@ -19,9 +19,9 @@ concepts:
       currency: currency
       number: invoice_number
       created_at: created_at
-      updated_at: updated_at
       amount_due: amount_due
       tax_amount: tax_amount
+      updated_at: updated_at
     core_coverage: 1.0
     evidence:
     - openapi/_original/monite-openapi-2023-09-01.json#DELETE /payables/{payable_id}

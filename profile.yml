@@ -151,6 +151,15 @@ concepts:
       - current_balance
       - currentBalance
       - accountBalance
+    - name: account_id
+      tier: extended
+      providers: 4
+      share: 0.333
+      type: string
+      spellings:
+      - accountId
+      - account_id
+      - AccountID
     - name: updated_at
       tier: extended
       providers: 4
@@ -161,15 +170,6 @@ concepts:
       - modified_at
       - updated_at
       - UpdatedDateUTC
-    - name: account_id
-      tier: extended
-      providers: 3
-      share: 0.25
-      type: string
-      spellings:
-      - account_id
-      - accountId
-      - AccountID
     - name: created_at
       tier: extended
       providers: 3
@@ -198,6 +198,7 @@ concepts:
     - tags
     - aba_routing_number
     - account_cashflow_classification
+    - account_category
     - account_lineage
     - account_provider
     - account_subtype
@@ -229,7 +230,6 @@ concepts:
     - address2_line2
     - address2_name
     - address2_postalcode
-    - address2_stateorprovince
   journal_entry:
     segments_seen:
       journals: 9
@@ -272,18 +272,6 @@ concepts:
       share: 0.048
       tier: long-tail
     properties:
-    - name: description
-      tier: core
-      providers: 14
-      share: 0.737
-      type: string
-      spellings:
-      - description
-      - memo
-      - details
-      - 'description '
-      - Memo
-      - reference
     - name: date
       tier: core
       providers: 13
@@ -297,6 +285,17 @@ concepts:
       - transaction_date
       - Date
       - journalDate
+    - name: description
+      tier: core
+      providers: 13
+      share: 0.684
+      type: string
+      spellings:
+      - description
+      - memo
+      - details
+      - 'description '
+      - reference
     - name: id
       tier: core
       providers: 12
@@ -305,24 +304,23 @@ concepts:
       spellings:
       - id
       - remote_id
-    - name: lines
+    - name: currency
       tier: extended
       providers: 9
       share: 0.474
+      type: string
+      spellings:
+      - currency
+      - currencyCode
+    - name: lines
+      tier: extended
+      providers: 8
+      share: 0.421
       type: array
       spellings:
       - lines
       - journalLines
       - entries
-      - JournalEntryLines
-    - name: currency
-      tier: extended
-      providers: 8
-      share: 0.421
-      type: string
-      spellings:
-      - currency
-      - currencyCode
     - name: created_at
       tier: extended
       providers: 7
@@ -377,35 +375,33 @@ concepts:
       spellings:
       - type
       - 'type '
-    - name: updated_at
-      tier: extended
-      providers: 4
-      share: 0.211
-      type: string
-      spellings:
-      - updatedDate
-      - modified_at
-      - updated_at
-      - updated
-    long_tail_count: 172
+    long_tail_count: 188
     long_tail_sample:
     - created_by
+    - credit
+    - debit
     - metadata
+    - updated_at
+    - account
+    - account_id
     - accounting_period
     - code
     - company
+    - credit_amount
+    - debit_amount
+    - error
     - items
     - journal_code
     - journal_entry_number
     - journal_source
-    - pagination
     - reversal_date
     - tags
-    - account
-    - account_id
+    - account_code
     - account_number_length
     - accounting_period_id
     - accounting_reason
+    - additional_information
+    - advance_payment
     - applied_payments
     - are_lines_with_tax
     - attachment_url
@@ -421,14 +417,6 @@ concepts:
     - capsule_recipe
     - capsule_resource_id
     - category_id
-    - chart_of_account
-    - chat
-    - chat_uuid
-    - close_task_id
-    - company_entity_id
-    - company_id
-    - contact_resource_id
-    - created_automatically
   vendor:
     segments_seen:
       vendors: 23
@@ -470,8 +458,8 @@ concepts:
     properties:
     - name: id
       tier: core
-      providers: 29
-      share: 0.744
+      providers: 31
+      share: 0.795
       type: string
       spellings:
       - id
@@ -493,8 +481,8 @@ concepts:
       - display-name
     - name: status
       tier: core
-      providers: 24
-      share: 0.615
+      providers: 25
+      share: 0.641
       type: string
       spellings:
       - status
@@ -517,14 +505,6 @@ concepts:
       - Email
       - email_address
       - EmailAddress
-    - name: address
-      tier: extended
-      providers: 16
-      share: 0.41
-      type: object
-      spellings:
-      - address
-      - addresses
     - name: tax_id
       tier: extended
       providers: 16
@@ -539,6 +519,14 @@ concepts:
       - taxNumber
       - tax-id
       - taxIdentifier
+    - name: address
+      tier: extended
+      providers: 15
+      share: 0.385
+      type: object
+      spellings:
+      - address
+      - addresses
     - name: currency
       tier: extended
       providers: 14
@@ -572,6 +560,14 @@ concepts:
       - phoneNumber
       - phone_number
       - phones
+    - name: city
+      tier: extended
+      providers: 11
+      share: 0.282
+      type: string
+      spellings:
+      - city
+      - City
     - name: updated_at
       tier: extended
       providers: 11
@@ -584,14 +580,6 @@ concepts:
       - updatedDate
       - updated
       - dateModified
-    - name: city
-      tier: extended
-      providers: 10
-      share: 0.256
-      type: string
-      spellings:
-      - city
-      - City
     - name: created_at
       tier: extended
       providers: 9
@@ -604,9 +592,16 @@ concepts:
       - creationDate
       - CreationDate
       - created
-    long_tail_count: 595
+    - name: country
+      tier: extended
+      providers: 8
+      share: 0.205
+      type: string
+      spellings:
+      - country
+      - Country
+    long_tail_count: 597
     long_tail_sample:
-    - country
     - metadata
     - payment_terms
     - website
@@ -616,18 +611,19 @@ concepts:
     - postal_code
     - supplier_name
     - company_id
+    - company_name
     - country_code
     - supplier_number
     - tags
     - type
     - code
     - company
-    - company_name
     - descriptor
     - payment_method
     - payment_term
     - primary_address
     - vendor_code
+    - vendor_name
     - vendor_type
     - account_number
     - address1
@@ -725,7 +721,6 @@ concepts:
       - lineItems
       - items
       - line_items
-      - $items
     - name: status
       tier: core
       providers: 13
@@ -748,7 +743,6 @@ concepts:
       - contactId
       - vendor_ref
       - contact
-      - contact_id
     - name: total
       tier: core
       providers: 11
@@ -797,16 +791,6 @@ concepts:
       - createdDate
       - createdAt
       - date_created
-    - name: updated_at
-      tier: extended
-      providers: 5
-      share: 0.294
-      type: string
-      spellings:
-      - updated_at
-      - updatedDate
-      - updatedAt
-      - updated
     - name: amount_due
       tier: extended
       providers: 4
@@ -831,7 +815,16 @@ concepts:
       spellings:
       - tax_amount
       - taxAmount
-    long_tail_count: 304
+    - name: updated_at
+      tier: extended
+      providers: 4
+      share: 0.235
+      type: string
+      spellings:
+      - updated_at
+      - updatedDate
+      - updatedAt
+    long_tail_count: 312
     long_tail_sample:
     - company
     - payment_status
@@ -853,10 +846,12 @@ concepts:
     - payment_terms
     - payments
     - purchase_order_refs
+    - quantity
     - sender
     - tags
     - tax_rate
     - terms
+    - unit_price
     - vendor_name
     - version
     - account_code
@@ -871,8 +866,6 @@ concepts:
     - amortizations
     - amount_freight
     - amount_including_vat
-    - amount_net
-    - amount_sum
   expense:
     segments_seen:
       expenses: 12
@@ -1090,6 +1083,16 @@ concepts:
       - taxCode
       - tax_type
       - TaxType
+    - name: rate
+      tier: core
+      providers: 13
+      share: 0.722
+      type: number
+      spellings:
+      - rate
+      - percentage
+      - DisplayTaxRate
+      - EffectiveRate
     - name: id
       tier: core
       providers: 12
@@ -1098,17 +1101,6 @@ concepts:
       spellings:
       - id
       - remote_id
-    - name: rate
-      tier: core
-      providers: 12
-      share: 0.667
-      type: number
-      spellings:
-      - rate
-      - percentage
-      - effective_rate
-      - DisplayTaxRate
-      - EffectiveRate
     - name: name
       tier: core
       providers: 11
@@ -1138,19 +1130,18 @@ concepts:
       - Status
     - name: type
       tier: extended
-      providers: 4
-      share: 0.222
+      providers: 5
+      share: 0.278
       type: string
       spellings:
       - type
-    long_tail_count: 124
+    long_tail_count: 126
     long_tail_sample:
     - updated_at
     - company_id
     - country
     - created_at
     - items
-    - rates
     - source
     - tax_components
     - accounting_id
@@ -1171,7 +1162,6 @@ concepts:
     - can_apply_to_revenue
     - companies
     - company
-    - components
     - contract_id
     - created_at_gte
     - created_at_lte
@@ -1185,3 +1175,5 @@ concepts:
     - display_in_budget
     - displayed_as
     - due_date
+    - effective_tax_rate
+    - exchange_rate

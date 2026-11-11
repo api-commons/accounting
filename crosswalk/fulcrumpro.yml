@@ -28,8 +28,8 @@ concepts:
     - tax-rates
     properties:
       code: code
-      id: id
       rate: rate
+      id: id
     core_coverage: 0.75
     evidence:
     - openapi/_original/fulcrumpro-openapi.json#GET /api/tax-rates/{id}

@@ -247,8 +247,11 @@
      "POST collection"
     ],
     "properties": {
-     "reportInfo": "object",
-     "reportItems": "array",
+     "date": "string",
+     "balance": "number",
+     "accountName": "string",
+     "accountId": "string",
+     "accountCategory": "object",
      "id": "string",
      "nominalCode": "string",
      "name": "string",
@@ -286,7 +289,6 @@
      "sourceRef": "object",
      "platformName": "string",
      "accountProvider": "string",
-     "accountName": "string",
      "accountType": "string",
      "identifiers": "object"
     },
@@ -455,8 +457,6 @@
      "PUT item"
     ],
     "properties": {
-     "Accounts": "array",
-     "MetaInformation": "object",
      "Number": "integer",
      "Description": "string",
      "Active": "boolean",
@@ -1247,11 +1247,12 @@
     ],
     "properties": {
      "id": "string",
+     "institutionName": "string",
+     "accountLast4": "string",
+     "status": "string",
+     "verifiedAt": "string",
      "name": "string",
      "email": "string",
-     "bankConnections": "array",
-     "status": "string",
-     "createdAt": "string",
      "taxIdentifier": "string",
      "metadata": "object"
     },
@@ -1311,8 +1312,12 @@
      "GET collection"
     ],
     "properties": {
-     "$items": "array",
-     "$total": "integer"
+     "id": "string",
+     "displayed_as": "string",
+     "name": "string",
+     "nominal_code": "string",
+     "ledger_account_type": "object",
+     "is_control_account": "boolean"
     },
     "evidence": [
      "openapi/_original/sage-accounting-openapi.yml#GET /ledger_accounts"
@@ -1473,8 +1478,6 @@
      "PUT item"
     ],
     "properties": {
-     "Meta": "object",
-     "Data": "array",
      "Name": "string",
      "Number": "string",
      "VatCodeId": "string",
@@ -1951,7 +1954,13 @@
      "chartOfAccount": "string",
      "entries": "array",
      "fiscalYearStartDate": "string",
-     "taskId": "string"
+     "taskId": "string",
+     "additionalInformation": "string",
+     "advancePayment": "object",
+     "debitCreditIndicator": "string",
+     "deliveryDate": "string",
+     "dueDate": "string",
+     "taxAssignmentDate": "string"
     },
     "evidence": [
      "openapi/_original/maesn-openapi.json#DELETE /accounting/journalEntries/{journalEntryId}",
@@ -2188,22 +2197,25 @@
      "POST collection"
     ],
     "properties": {
-     "journalEntries": "array",
-     "pageInfo": "object",
-     "index": "integer",
-     "status": "string",
      "id": "string",
-     "nativeId": "string",
-     "error": "object",
-     "basis": "array",
+     "manualJournalEntryId": "string",
+     "description": "string",
      "memo": "string",
      "postingDate": "string",
+     "effectiveAt": "string",
+     "basis": "string",
      "type": "string",
+     "lines": "array",
+     "index": "integer",
+     "status": "string",
+     "nativeId": "string",
+     "error": "object",
      "nativeTransactionId": "string",
      "createdFor": "string",
-     "lines": "array",
      "document": "object",
-     "date": "string"
+     "accountId": "string",
+     "debit": "number",
+     "credit": "number"
     },
     "evidence": [
      "openapi/_original/puzzle-openapi-original.json#GET /company/{id}/journalEntries",
@@ -2252,8 +2264,6 @@
      "PUT item"
     ],
     "properties": {
-     "journal_entries": "array",
-     "pagination": "object",
      "id": "string",
      "subsidiary_id": "string",
      "name": "string",
@@ -2284,10 +2294,11 @@
      "POST collection"
     ],
     "properties": {
-     "JdtNum": "integer",
-     "ReferenceDate": "string",
-     "Memo": "string",
-     "JournalEntryLines": "array"
+     "AccountCode": "string",
+     "Debit": "number",
+     "Credit": "number",
+     "ShortName": "string",
+     "LineMemo": "string"
     },
     "evidence": [
      "openapi/_original/sap-business-one-service-layer-openapi.yml#GET /JournalEntries",
@@ -2343,8 +2354,8 @@
      "taxVatApplicable": "boolean",
      "valueDate": "string",
      "resourceId": "string",
-     "failed": "array",
-     "updated": "array",
+     "error": "string",
+     "errorCode": "string",
      "attributes": null,
      "resourceIds": "array",
      "endDate": "string",
@@ -2387,7 +2398,13 @@
      "lines": "array",
      "createdOn": "string",
      "href": "string",
-     "memo": "string"
+     "lineOrder": "integer",
+     "account": "object",
+     "debitAmount": "number",
+     "creditAmount": "number",
+     "currency": "string",
+     "memo": "string",
+     "worktags": "array"
     },
     "evidence": [
      "openapi/_original/workday-finance-financial-management-openapi.yml#GET /journalEntries",
@@ -2418,7 +2435,12 @@
      "lines": "array",
      "accountingPeriod": "object",
      "createdBy": "object",
-     "createdOn": "string"
+     "createdOn": "string",
+     "ledgerAccount": "object",
+     "debitAmount": "number",
+     "creditAmount": "number",
+     "memo": "string",
+     "costCenter": "object"
     },
     "evidence": [
      "openapi/_original/workday-financials-financial-accounting-openapi.yml#GET /journalEntries",
@@ -3161,8 +3183,6 @@
      "PUT item"
     ],
     "properties": {
-     "Suppliers": "array",
-     "MetaInformation": "object",
      "SupplierNumber": "string",
      "Name": "string",
      "OrganisationNumber": "string",
@@ -3248,7 +3268,12 @@
      "phone": "string",
      "comment": "string",
      "currency": "string",
-     "addresses": "array"
+     "line_1": "string",
+     "line_2": "string",
+     "city": "string",
+     "state": "string",
+     "zip": "string",
+     "country": "string"
     },
     "evidence": [
      "openapi/_original/katana-openapi-original.json#DELETE /suppliers/{id}",
@@ -3349,8 +3374,10 @@
      "GET collection"
     ],
     "properties": {
-     "nextPage": "string",
-     "vendors": "array"
+     "vendorId": "string",
+     "vendorName": "string",
+     "centralVendorId": "string",
+     "vendorAccounts": "array"
     },
     "evidence": [
      "openapi/_original/marginedge-openapi.yml#GET /vendors"
@@ -3664,24 +3691,60 @@
      "POST collection"
     ],
     "properties": {
-     "version": "string",
-     "count": "integer",
-     "page": "integer",
-     "limit": "integer",
-     "vendors": "array",
-     "vendor": "object",
+     "id": "integer",
      "ottimate_company_id": "integer",
-     "erp_vendor_name": "string",
-     "erp_vendor_id": "string",
-     "email": "string",
-     "phone": "string",
-     "net_terms": "string",
-     "payment_method": "string",
-     "city": "string",
-     "state": "string",
-     "zipcode": "string",
-     "address_line_1": "string",
-     "address_line_2": "string",
+     "company_name": "string",
+     "erp_vendor_id": [
+      "string",
+      "null"
+     ],
+     "erp_vendor_name": [
+      "string",
+      "null"
+     ],
+     "email": [
+      "string",
+      "null"
+     ],
+     "phone": [
+      "string",
+      "null"
+     ],
+     "net_terms": [
+      "string",
+      "null"
+     ],
+     "payment_method": null,
+     "address_line_1": [
+      "string",
+      "null"
+     ],
+     "address_line_2": [
+      "string",
+      "null"
+     ],
+     "city": [
+      "string",
+      "null"
+     ],
+     "state": [
+      "string",
+      "null"
+     ],
+     "zipcode": [
+      "string",
+      "null"
+     ],
+     "last_modified_date": [
+      "string",
+      "null"
+     ],
+     "last_modified_date_utc": [
+      "string",
+      "null"
+     ],
+     "version": "string",
+     "vendor": "object",
      "success_count": "integer",
      "created_count": "integer",
      "updated_count": "integer",
@@ -3923,24 +3986,60 @@
      "POST collection"
     ],
     "properties": {
-     "version": "string",
-     "count": "integer",
-     "page": "integer",
-     "limit": "integer",
-     "vendors": "array",
-     "vendor": "object",
+     "id": "integer",
      "ottimate_company_id": "integer",
-     "erp_vendor_name": "string",
-     "erp_vendor_id": "string",
-     "email": "string",
-     "phone": "string",
-     "net_terms": "string",
-     "payment_method": "string",
-     "city": "string",
-     "state": "string",
-     "zipcode": "string",
-     "address_line_1": "string",
-     "address_line_2": "string",
+     "company_name": "string",
+     "erp_vendor_id": [
+      "string",
+      "null"
+     ],
+     "erp_vendor_name": [
+      "string",
+      "null"
+     ],
+     "email": [
+      "string",
+      "null"
+     ],
+     "phone": [
+      "string",
+      "null"
+     ],
+     "net_terms": [
+      "string",
+      "null"
+     ],
+     "payment_method": null,
+     "address_line_1": [
+      "string",
+      "null"
+     ],
+     "address_line_2": [
+      "string",
+      "null"
+     ],
+     "city": [
+      "string",
+      "null"
+     ],
+     "state": [
+      "string",
+      "null"
+     ],
+     "zipcode": [
+      "string",
+      "null"
+     ],
+     "last_modified_date": [
+      "string",
+      "null"
+     ],
+     "last_modified_date_utc": [
+      "string",
+      "null"
+     ],
+     "version": "string",
+     "vendor": "object",
      "success_count": "integer",
      "created_count": "integer",
      "updated_count": "integer",
@@ -3984,8 +4083,6 @@
      "PUT item"
     ],
     "properties": {
-     "vendors": "array",
-     "pagination": "object",
      "name": "string",
      "account_code": "string",
      "address": "object",
@@ -4170,8 +4267,6 @@
      "PUT item"
     ],
     "properties": {
-     "Meta": "object",
-     "Data": "array",
      "Id": "string",
      "SupplierNumber": "string",
      "Address1": "string",
@@ -4485,7 +4580,13 @@
      "archived": "boolean",
      "billLineItems": "array",
      "createdTime": "string",
-     "updatedTime": "string"
+     "updatedTime": "string",
+     "chartOfAccountId": "string",
+     "departmentId": "string",
+     "locationId": "string",
+     "lineType": "string",
+     "quantity": "number",
+     "unitPrice": "number"
     },
     "evidence": [
      "openapi/_original/bill-openapi.yml#GET /bills",
@@ -5057,8 +5158,6 @@
      "PUT item"
     ],
     "properties": {
-     "bills": "array",
-     "pagination": "object",
      "vendor_id": "string",
      "expense_number": "string",
      "items": "array",
@@ -5123,8 +5222,6 @@
      "POST collection"
     ],
     "properties": {
-     "$items": "array",
-     "$total": "integer",
      "id": "string",
      "date": "string",
      "due_date": "string",
@@ -5137,7 +5234,11 @@
      "tax_amount": "number",
      "total_amount": "number",
      "outstanding_amount": "number",
-     "contact_id": "string"
+     "description": "string",
+     "quantity": "number",
+     "unit_price": "number",
+     "ledger_account_id": "string",
+     "tax_rate_id": "string"
     },
     "evidence": [
      "openapi/_original/sage-accounting-openapi.yml#GET /purchase_invoices",
@@ -5239,8 +5340,8 @@
      "valueDate": "string",
      "resourceId": "string",
      "terms": "integer",
-     "failed": "array",
-     "updated": "array",
+     "error": "string",
+     "errorCode": "string",
      "attributes": null,
      "resourceIds": "array",
      "bill": null,
@@ -5469,7 +5570,9 @@
      "invoiceId": "string",
      "customData": "array",
      "lastModifiedDate": "string",
-     "expenseSource": "string"
+     "id": "string",
+     "value": "string",
+     "isValid": "boolean"
     },
     "evidence": [
      "openapi/_original/sap-concur-expenses-api-openapi.yml#DELETE /expensereports/v4/reports/{reportId}/expenses/{expenseId}",
@@ -5521,15 +5624,15 @@
      "PUT collection"
     ],
     "properties": {
-     "responseInfo": "object",
-     "returnObject": "array",
-     "recordCount": "integer",
      "lmxExpenseID": "string",
      "lmxCreatedBy": "string",
      "lmxCreatedDate": "string",
      "lmxDescription": "string",
      "lmxUniqueID": "string",
-     "lmxRowVersion": "integer"
+     "lmxRowVersion": "integer",
+     "responseInfo": "object",
+     "returnObject": "object",
+     "recordCount": "integer"
     },
     "evidence": [
      "openapi/_original/eci-solutions-m1-openapi.json#DELETE /api/ERP/Expenses/{key}",
@@ -5962,8 +6065,10 @@
      "description": "string",
      "isPhysical": "boolean",
      "isActive": "boolean",
-     "totalRate": "number",
-     "rates": "array"
+     "jurisdiction": "string",
+     "jurisdictionType": "string",
+     "taxName": "string",
+     "rate": "number"
     },
     "evidence": [
      "openapi/_original/avalara-avatax-rest-openapi.yml#GET /api/v2/definitions/taxcodes",
@@ -6048,9 +6153,6 @@
      "taxCode": "string",
      "taxFactor": "number",
      "taxGLCode": "string",
-     "responseInfo": "object",
-     "returnObject": "array",
-     "recordCount": "integer",
      "xaxAccrualGlAccountID": "string",
      "xaxTaxCodeID": "string",
      "xaxCreatedBy": "string",
@@ -6062,7 +6164,10 @@
      "xaxIncludePrimaryTax": "boolean",
      "xaxRowVersion": "integer",
      "xaxTaxOption": "string",
-     "xaxTaxType": "integer"
+     "xaxTaxType": "integer",
+     "responseInfo": "object",
+     "returnObject": "object",
+     "recordCount": "integer"
     },
     "evidence": [
      "openapi/_original/eci-solutions-erp-v2-1-openapi.json#GET /api/v2.1/tax-codes",
@@ -6099,9 +6204,8 @@
      "count": "integer",
      "external_id": "string",
      "name": "string",
-     "components": "array",
-     "id": "string",
-     "effective_rate": "string"
+     "rate": "string",
+     "id": "string"
     },
     "evidence": [
      "openapi/_original/float-financial-openapi.json#DELETE /v1/tax-codes/{tax_code_id}",
@@ -6400,16 +6504,17 @@
      "external_references": "array",
      "updated_at": "string",
      "sent_at": "string",
-     "tax_rates": "array",
+     "percentage": "number",
+     "tax_amount": "object",
+     "country": "string",
+     "type": "string",
+     "description": "string",
      "credit_memo_number": "string",
      "credit_memo_date": "string",
      "applied_amount": "object",
      "remaining_amount": "object",
      "applications": "array",
-     "code": "string",
-     "country": "string",
-     "description": "string",
-     "percentage": "string"
+     "code": "string"
     },
     "evidence": [
      "openapi/_original/rillet-accounting-api-openapi.json#GET /tax-rates",
@@ -7703,7 +7808,6 @@
     "leanlaw",
     "light",
     "maesn",
-    "marginedge",
     "merge",
     "microsoft-dynamics",
     "microsoft-dynamics-365",
@@ -7788,6 +7892,7 @@
     "freee",
     "fund-that-flip",
     "fyle",
+    "katana",
     "merge",
     "microsoft-dynamics",
     "microsoft-dynamics-365",
@@ -7830,8 +7935,7 @@
     "float-financial",
     "maesn",
     "microsoft-dynamics-365",
-    "navision",
-    "sage"
+    "navision"
    ],
    "kebab-case": [
     "coupa"

@@ -8,11 +8,13 @@ concepts:
     - suppliers
     properties:
       name: name
+      status: state
       email: email
-      address: addresses
       currency: currency
       phone: phone
-    core_coverage: 0.333
+      city: city
+      country: country
+    core_coverage: 0.667
     evidence:
     - openapi/_original/katana-openapi-original.json#DELETE /suppliers/{id}
     - openapi/_original/katana-openapi-original.json#GET /suppliers

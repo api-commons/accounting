@@ -26,7 +26,6 @@ concepts:
       description: reference
       currency: currency
       status: status
-      updated_at: updated
     core_coverage: 0.333
     evidence:
     - openapi/_original/tinvio-com-openapi-original.yaml#DELETE /api/v1/journals/{resourceId}
@@ -43,7 +42,6 @@ concepts:
       lines: lineItems
       status: status
       currency: currency
-      updated_at: updated
     core_coverage: 0.625
     evidence:
     - openapi/_original/tinvio-com-openapi-original.yaml#DELETE /api/v1/bills/{resourceId}
