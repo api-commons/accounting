@@ -24,6 +24,7 @@ common_fields:
 
 concepts:
   ledger_account:
+    path: /ledger-accounts
     segments: [accounts, account, ledger_accounts, ledger-accounts, gl_accounts, gl-accounts, chart_of_accounts, chart-of-accounts, chartofaccounts, nominal_accounts, general_ledger_accounts]
     requires: [journal_entry]
     aliases:
